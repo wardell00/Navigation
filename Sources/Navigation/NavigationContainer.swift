@@ -13,7 +13,7 @@ public struct NavigationContainer<Content: View>: View {
     @Bindable var router: Router
     @ViewBuilder var content: () -> Content
     
-    init(parentRouter: Router,
+    public init(parentRouter: Router,
          tab: TabNavigationWrapper,
          @ViewBuilder content: @escaping () -> Content) {
         self._router = .init(wrappedValue: parentRouter.childRouter(tab: tab))
