@@ -10,10 +10,10 @@ import SwiftUI
 
 
 public struct NavigationContainer<Content: View>: View {
-    @Bindable var router: Router
+    @Bindable var router: NavigationRouter
     @ViewBuilder var content: () -> Content
     
-    public init(parentRouter: Router,
+    public init(parentRouter: NavigationRouter,
          tab: TabNavigationWrapper,
          @ViewBuilder content: @escaping () -> Content) {
         self._router = .init(wrappedValue: parentRouter.childRouter(tab: tab))
@@ -30,7 +30,7 @@ public struct NavigationContainer<Content: View>: View {
     }
 }
 private struct ChildContainer<Content: View>: View {
-    @Bindable var router: Router
+    @Bindable var router: NavigationRouter
     @ViewBuilder var content: () -> Content
     
     var body: some View {

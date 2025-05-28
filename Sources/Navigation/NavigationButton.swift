@@ -11,7 +11,7 @@ import SwiftUI
 public struct NavigationButton<Content: View>: View {
     let destination: Destination
     @ViewBuilder var content: () -> Content
-    @Environment(Router.self) private var router
+    @Environment(NavigationRouter.self) private var router
     
     public init(
         destination: Destination,

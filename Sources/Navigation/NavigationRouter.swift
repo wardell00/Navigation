@@ -10,7 +10,7 @@ import SwiftUI
 import OSLog
 
 @Observable
-public final class Router {
+public final class NavigationRouter {
     
     let id: UUID = UUID()
     let level: Int
@@ -25,7 +25,7 @@ public final class Router {
     
     public var presentedFullScreen: FullScreenNavigationWrapper?
     
-    weak var parent: Router?
+    weak var parent: NavigationRouter?
     
     private(set) var isActive: Bool = false
     
@@ -45,10 +45,10 @@ public final class Router {
     }
 }
 
-public extension Router {
+public extension NavigationRouter {
     
-    func childRouter(tab: TabNavigationWrapper? = nil) -> Router {
-        let router = Router(level: level + 1,
+    func childRouter(tab: TabNavigationWrapper? = nil) -> NavigationRouter {
+        let router = NavigationRouter(level: level + 1,
                             identiferTab: tab ?? identiferTab)
         router.parent = self
         return router
@@ -64,7 +64,7 @@ public extension Router {
 }
 
 
-public extension Router {
+public extension NavigationRouter {
     
     func navigate(to destination: Destination) {
         
