@@ -1,0 +1,159 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios18.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Navigation
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import Foundation
+import OSLog
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+final public class NavigationRouter {
+  final public let identiferTab: Navigation.TabNavigationWrapper?
+  final public var selectedTab: Navigation.TabNavigationWrapper? {
+    get
+    set
+    _modify
+  }
+  final public var navigationPath: [Navigation.PushNavigationWrapper] {
+    get
+    set
+    _modify
+  }
+  final public var presentedSheet: Navigation.SheetNavigationWrapper? {
+    get
+    set
+    _modify
+  }
+  final public var presentedFullScreen: Navigation.FullScreenNavigationWrapper? {
+    get
+    set
+    _modify
+  }
+  public init(level: Swift.Int = 0, identiferTab: Navigation.TabNavigationWrapper? = nil)
+  @objc deinit
+}
+extension Navigation.NavigationRouter {
+  final public func childRouter(tab: Navigation.TabNavigationWrapper? = nil) -> Navigation.NavigationRouter
+  final public func setActive()
+  final public func resignActive()
+}
+extension Navigation.NavigationRouter {
+  final public func navigate(to destination: Navigation.Destination)
+  final public func selectTab(for destination: Navigation.TabNavigationWrapper)
+  final public func push(_ destination: Navigation.PushNavigationWrapper)
+  final public func present(_ destination: Navigation.SheetNavigationWrapper)
+  final public func present(_ destination: Navigation.FullScreenNavigationWrapper)
+}
+extension Navigation.NavigationRouter : Observation.Observable {
+}
+@_Concurrency.MainActor @preconcurrency public struct NavigationContainer<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(parentRouter: Navigation.NavigationRouter, tab: Navigation.TabNavigationWrapper, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10Navigation0A9ContainerV4bodyQrvp", 0) __<Content>
+}
+@_Concurrency.MainActor @preconcurrency public struct NavigationButton<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(destination: Navigation.Destination, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public init(push destination: Navigation.PushNavigationWrapper, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public init(sheet destination: Navigation.SheetNavigationWrapper, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public init(fullScreen destination: Navigation.FullScreenNavigationWrapper, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10Navigation0A6ButtonV4bodyQrvp", 0) __<Content>
+}
+public struct TabNavigationWrapper : Swift.Identifiable, Swift.CustomStringConvertible {
+  public init<T>(_ base: T) where T : Navigation.TabNavigationPr
+  public var id: Swift.AnyHashable {
+    get
+  }
+  public func destinationView() -> SwiftUICore.AnyView
+  public var description: Swift.String {
+    get
+  }
+  public typealias ID = Swift.AnyHashable
+}
+extension Navigation.TabNavigationWrapper : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: Navigation.TabNavigationWrapper, rhs: Navigation.TabNavigationWrapper) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PushNavigationWrapper : Swift.Identifiable, Swift.CustomStringConvertible {
+  public init<T>(_ base: T) where T : Navigation.PushNavigationPr
+  public var id: Swift.AnyHashable {
+    get
+  }
+  public func destinationView() -> SwiftUICore.AnyView
+  public var description: Swift.String {
+    get
+  }
+  public typealias ID = Swift.AnyHashable
+}
+extension Navigation.PushNavigationWrapper : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: Navigation.PushNavigationWrapper, rhs: Navigation.PushNavigationWrapper) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct SheetNavigationWrapper : Swift.Identifiable, Swift.CustomStringConvertible {
+  public init<T>(_ base: T) where T : Navigation.SheetNavigationPr
+  public var id: Swift.AnyHashable {
+    get
+  }
+  public func destinationView() -> SwiftUICore.AnyView
+  public var description: Swift.String {
+    get
+  }
+  public typealias ID = Swift.AnyHashable
+}
+extension Navigation.SheetNavigationWrapper : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: Navigation.SheetNavigationWrapper, rhs: Navigation.SheetNavigationWrapper) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct FullScreenNavigationWrapper : Swift.Identifiable, Swift.CustomStringConvertible {
+  public init<T>(_ base: T) where T : Navigation.FullScreenNavigationPr
+  public var id: Swift.AnyHashable {
+    get
+  }
+  public func destinationView() -> SwiftUICore.AnyView
+  public var description: Swift.String {
+    get
+  }
+  public typealias ID = Swift.AnyHashable
+}
+extension Navigation.FullScreenNavigationWrapper : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: Navigation.FullScreenNavigationWrapper, rhs: Navigation.FullScreenNavigationWrapper) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol DestinationPr : Swift.CustomStringConvertible, Swift.Hashable, Swift.Identifiable {
+  associatedtype Content : SwiftUICore.View
+  func destinationView() -> Self.Content
+}
+public protocol TabNavigationPr : Navigation.DestinationPr {
+}
+public protocol PushNavigationPr : Navigation.DestinationPr {
+}
+public protocol SheetNavigationPr : Navigation.DestinationPr {
+}
+public protocol FullScreenNavigationPr : Navigation.DestinationPr {
+}
+public enum Destination {
+  case tab(_: Navigation.TabNavigationWrapper)
+  case push(_: Navigation.PushNavigationWrapper)
+  case sheet(_: Navigation.SheetNavigationWrapper)
+  case fullScreen(_: Navigation.FullScreenNavigationWrapper)
+}
+extension Navigation.NavigationContainer : Swift.Sendable {}
+extension Navigation.NavigationButton : Swift.Sendable {}
