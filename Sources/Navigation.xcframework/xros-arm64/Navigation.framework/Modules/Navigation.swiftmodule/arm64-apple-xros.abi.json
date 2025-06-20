@@ -6,6 +6,238 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Navigation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NavigationContainer",
+        "printedName": "NavigationContainer",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(router:content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NavigationContainer",
+                "printedName": "Navigation.NavigationContainer<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  }
+                ],
+                "usr": "s:10Navigation0A9ContainerV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NavigationRouter",
+                "printedName": "Navigation.NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:10Navigation0A6RouterC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_3",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10Navigation0A9ContainerV6router7contentACyxq_q0_q1_GAA0A6RouterCyxq_q0_G_q1_yctcfc",
+            "mangledName": "$s10Navigation0A9ContainerV6router7contentACyxq_q0_q1_GAA0A6RouterCyxq_q0_G_q1_yctcfc",
+            "moduleName": "Navigation",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation.PushNavigation, τ_0_1 : Navigation.ModalNavigation, τ_0_2 : Navigation.ModalNavigation, τ_0_3 : SwiftUI.View>",
+            "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation.PushNavigation, Sheet : Navigation.ModalNavigation, FullScreen : Navigation.ModalNavigation, Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Navigation0A9ContainerV4bodyQrvp",
+            "mangledName": "$s10Navigation0A9ContainerV4bodyQrvp",
+            "moduleName": "Navigation",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Navigation0A9ContainerV4bodyQrvg",
+                "mangledName": "$s10Navigation0A9ContainerV4bodyQrvg",
+                "moduleName": "Navigation",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation.PushNavigation, τ_0_1 : Navigation.ModalNavigation, τ_0_2 : Navigation.ModalNavigation, τ_0_3 : SwiftUI.View>",
+                "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation.PushNavigation, Sheet : Navigation.ModalNavigation, FullScreen : Navigation.ModalNavigation, Content : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Navigation0A9ContainerV",
+        "mangledName": "$s10Navigation0A9ContainerV",
+        "moduleName": "Navigation",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation.PushNavigation, τ_0_1 : Navigation.ModalNavigation, τ_0_2 : Navigation.ModalNavigation, τ_0_3 : SwiftUI.View>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation.PushNavigation, Sheet : Navigation.ModalNavigation, FullScreen : Navigation.ModalNavigation, Content : SwiftUI.View>",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -2544,238 +2776,6 @@
         "declKind": "Struct",
         "usr": "s:10Navigation0A6ButtonV",
         "mangledName": "$s10Navigation0A6ButtonV",
-        "moduleName": "Navigation",
-        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation.PushNavigation, τ_0_1 : Navigation.ModalNavigation, τ_0_2 : Navigation.ModalNavigation, τ_0_3 : SwiftUI.View>",
-        "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation.PushNavigation, Sheet : Navigation.ModalNavigation, FullScreen : Navigation.ModalNavigation, Content : SwiftUI.View>",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Navigation",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Navigation"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NavigationContainer",
-        "printedName": "NavigationContainer",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(router:content:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NavigationContainer",
-                "printedName": "Navigation.NavigationContainer<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_1"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_2"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_3"
-                  }
-                ],
-                "usr": "s:10Navigation0A9ContainerV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NavigationRouter",
-                "printedName": "Navigation.NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_1"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_2"
-                  }
-                ],
-                "usr": "s:10Navigation0A6RouterC"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_0_3",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_3"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10Navigation0A9ContainerV6router7contentACyxq_q0_q1_GAA0A6RouterCyxq_q0_G_q1_yctcfc",
-            "mangledName": "$s10Navigation0A9ContainerV6router7contentACyxq_q0_q1_GAA0A6RouterCyxq_q0_G_q1_yctcfc",
-            "moduleName": "Navigation",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation.PushNavigation, τ_0_1 : Navigation.ModalNavigation, τ_0_2 : Navigation.ModalNavigation, τ_0_3 : SwiftUI.View>",
-            "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation.PushNavigation, Sheet : Navigation.ModalNavigation, FullScreen : Navigation.ModalNavigation, Content : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10Navigation0A9ContainerV4bodyQrvp",
-            "mangledName": "$s10Navigation0A9ContainerV4bodyQrvp",
-            "moduleName": "Navigation",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10Navigation0A9ContainerV4bodyQrvg",
-                "mangledName": "$s10Navigation0A9ContainerV4bodyQrvg",
-                "moduleName": "Navigation",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation.PushNavigation, τ_0_1 : Navigation.ModalNavigation, τ_0_2 : Navigation.ModalNavigation, τ_0_3 : SwiftUI.View>",
-                "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation.PushNavigation, Sheet : Navigation.ModalNavigation, FullScreen : Navigation.ModalNavigation, Content : SwiftUI.View>",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10Navigation0A9ContainerV",
-        "mangledName": "$s10Navigation0A9ContainerV",
         "moduleName": "Navigation",
         "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation.PushNavigation, τ_0_1 : Navigation.ModalNavigation, τ_0_2 : Navigation.ModalNavigation, τ_0_3 : SwiftUI.View>",
         "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation.PushNavigation, Sheet : Navigation.ModalNavigation, FullScreen : Navigation.ModalNavigation, Content : SwiftUI.View>",

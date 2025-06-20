@@ -6,64 +6,64 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		zqr1Y9qXhjoMLLpxNQLXPYYmL8U=
+		A+3akPeQOtVsR5OWItmQDgGpQkY=
 		</data>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.abi.json</key>
 		<data>
-		9MjtospfKX/06SB82d3x6A3V+9M=
+		ea81mnBHNSIxXTFn+5dHvqqvHfM=
 		</data>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<data>
-		ufxxweehF3IJU/hs1/MWo8xVHLo=
+		2GcMwnmXphUDdYt/zWD9Zbg1uzE=
 		</data>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.swiftdoc</key>
 		<data>
-		VvjjrJDw/l7XMqcFIlwQeh/5Ljo=
+		V6CLCvxxxTUhvbJsX1kHH9VXbVk=
 		</data>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.swiftinterface</key>
 		<data>
-		ufxxweehF3IJU/hs1/MWo8xVHLo=
+		2GcMwnmXphUDdYt/zWD9Zbg1uzE=
 		</data>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.swiftmodule</key>
 		<data>
-		Fj+hSkuCPXBMGoLiDa2erQQqzfI=
+		KiIGULVYRyluqw27c/iWWcA93yQ=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ryd72CWk3Hf6GMNp7L002gqlly6F9jwq0yjtn0jiLsg=
+			Knq2PApeOxr63kjviXH9Ywvd7fu5PJPyVfQXxtDyhbI=
 			</data>
 		</dict>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uGWMlxvwnBruoRANXOvkEhVKmuZdFk9k2pYN7zy6miw=
+			kS9TIkMRRdkLlWb8vMBhzf9P430BsM/Bg3EZNMFK1l8=
 			</data>
 		</dict>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lKV78v8vu+qOC+G1NxHOvnMYNpMVB/SKDJTC7VRdico=
+			QSEviEfcwjOGT7KFM+Dnw99VbvyaKi+z+07w1j/4yMw=
 			</data>
 		</dict>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uGWMlxvwnBruoRANXOvkEhVKmuZdFk9k2pYN7zy6miw=
+			kS9TIkMRRdkLlWb8vMBhzf9P430BsM/Bg3EZNMFK1l8=
 			</data>
 		</dict>
-		<key>Modules/Navigation.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/Navigation.swiftmodule/arm64-apple-xros.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fcwn6jGedZ8FfnUMRjd1Xa307DHNIMa56X+FabPq3Zs=
+			bwO8gD0RMe1aTNjcn4JKWPKvXxayf0TIJMbRyJ0fx+Y=
 			</data>
 		</dict>
 	</dict>
