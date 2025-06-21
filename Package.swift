@@ -17,7 +17,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
             name: "Navigation",
-            path: "./Sources/Navigation.xcframework"
+            path: "./Navigation.xcframework"
         )
     ]
 )
