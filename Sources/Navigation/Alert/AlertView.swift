@@ -6,24 +6,8 @@
 //
 
 import SwiftUI
-
-struct AlertView<Content: View>: View {
-    let content: Content
-    @Binding var alertPush: AlertPush?
-    var body: some View {
-        content
-            .alert(alertPush?.title ?? "",
-                   isPresented: $alertPush.isPresented,
-                   presenting: alertPush) { alert in
-                if let buttonContent = alertPush?.buttonContent {
-                    buttonContent
-                }
-            } message: { alert in
-                Text(alert.message)
-            }
-    }
-}
-
+import Navigation_Internal
+@_exported import Navigation_Protocols
 
 public extension View {
     

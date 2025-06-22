@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import Navigation_Protocols
 
-public extension Binding where Value == AlertPush? {
+public extension Binding where Value == ConfirmationPush? {
     var isPresented: Binding<Bool> {
         Binding<Bool>(
             get: { self.wrappedValue != nil },

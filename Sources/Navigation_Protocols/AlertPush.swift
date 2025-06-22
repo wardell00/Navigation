@@ -9,9 +9,9 @@ import SwiftUI
 
 public struct AlertPush: Identifiable, @unchecked Sendable{
     public let id: UUID = UUID()
-    let title: LocalizedStringKey
-    let message: LocalizedStringKey
-    let buttonContent: AnyView?
+    public let title: LocalizedStringKey
+    public let message: LocalizedStringKey
+    public let buttonContent: AnyView?
     
     public init<Content: View>(
         title: LocalizedStringKey,
