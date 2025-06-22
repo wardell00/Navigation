@@ -1723,6 +1723,65 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:message:titleVisibility:buttonContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConfirmationPush",
+                "printedName": "Navigation_Protocols.ConfirmationPush",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
