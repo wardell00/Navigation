@@ -16,6 +16,472 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ViewProvider",
+        "printedName": "ViewProvider",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "Content",
+            "printedName": "Content",
+            "declKind": "AssociatedType",
+            "usr": "s:20Navigation_Protocols12ViewProviderP7ContentQa",
+            "mangledName": "$s20Navigation_Protocols12ViewProviderP7ContentQa",
+            "moduleName": "Navigation_Protocols",
+            "protocolReq": true
+          },
+          {
+            "kind": "Function",
+            "name": "destinationView",
+            "printedName": "destinationView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Content"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Navigation_Protocols12ViewProviderP011destinationC07ContentQzyF",
+            "mangledName": "$s20Navigation_Protocols12ViewProviderP011destinationC07ContentQzyF",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0 where τ_0_0 : Navigation_Protocols.ViewProvider>",
+            "sugared_genericSig": "<Self where Self : Navigation_Protocols.ViewProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20Navigation_Protocols12ViewProviderP",
+        "mangledName": "$s20Navigation_Protocols12ViewProviderP",
+        "moduleName": "Navigation_Protocols",
+        "genericSig": "<τ_0_0 : Swift.Identifiable, τ_0_0.Content : SwiftUI.View>",
+        "sugared_genericSig": "<Self : Swift.Identifiable, Self.Content : SwiftUI.View>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushNavigation",
+        "printedName": "PushNavigation",
+        "declKind": "Protocol",
+        "usr": "s:20Navigation_Protocols04PushA0P",
+        "mangledName": "$s20Navigation_Protocols04PushA0P",
+        "moduleName": "Navigation_Protocols",
+        "genericSig": "<τ_0_0 : Navigation_Protocols.ViewProvider, τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Self : Navigation_Protocols.ViewProvider, Self : Swift.Hashable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ViewProvider",
+            "printedName": "ViewProvider",
+            "usr": "s:20Navigation_Protocols12ViewProviderP",
+            "mangledName": "$s20Navigation_Protocols12ViewProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ModalNavigation",
+        "printedName": "ModalNavigation",
+        "declKind": "Protocol",
+        "usr": "s:20Navigation_Protocols05ModalA0P",
+        "mangledName": "$s20Navigation_Protocols05ModalA0P",
+        "moduleName": "Navigation_Protocols",
+        "genericSig": "<τ_0_0 : Navigation_Protocols.ViewProvider>",
+        "sugared_genericSig": "<Self : Navigation_Protocols.ViewProvider>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ViewProvider",
+            "printedName": "ViewProvider",
+            "usr": "s:20Navigation_Protocols12ViewProviderP",
+            "mangledName": "$s20Navigation_Protocols12ViewProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Destination",
+        "printedName": "Destination",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "push",
+            "printedName": "push",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation> (Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_0) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Destination",
+                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:20Navigation_Protocols11DestinationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Destination",
+                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:20Navigation_Protocols11DestinationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20Navigation_Protocols11DestinationO4pushyACyxq_q0_GxcAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
+            "mangledName": "$s20Navigation_Protocols11DestinationO4pushyACyxq_q0_GxcAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
+            "moduleName": "Navigation_Protocols"
+          },
+          {
+            "kind": "Var",
+            "name": "sheet",
+            "printedName": "sheet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation> (Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_1) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_1) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Destination",
+                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:20Navigation_Protocols11DestinationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Destination",
+                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:20Navigation_Protocols11DestinationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20Navigation_Protocols11DestinationO5sheetyACyxq_q0_Gq_cAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
+            "mangledName": "$s20Navigation_Protocols11DestinationO5sheetyACyxq_q0_Gq_cAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
+            "moduleName": "Navigation_Protocols"
+          },
+          {
+            "kind": "Var",
+            "name": "fullScreen",
+            "printedName": "fullScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation> (Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_2) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_2) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Destination",
+                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:20Navigation_Protocols11DestinationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Destination",
+                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:20Navigation_Protocols11DestinationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20Navigation_Protocols11DestinationO10fullScreenyACyxq_q0_Gq0_cAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
+            "mangledName": "$s20Navigation_Protocols11DestinationO10fullScreenyACyxq_q0_Gq0_cAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
+            "moduleName": "Navigation_Protocols"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20Navigation_Protocols11DestinationO",
+        "mangledName": "$s20Navigation_Protocols11DestinationO",
+        "moduleName": "Navigation_Protocols",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Protocols",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ConfirmationPush",
         "printedName": "ConfirmationPush",
         "children": [
@@ -239,6 +705,65 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:message:titleVisibility:buttonContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConfirmationPush",
+                "printedName": "Navigation_Protocols.ConfirmationPush",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -1309,472 +1834,6 @@
             "printedName": "Observable",
             "usr": "s:11Observation10ObservableP",
             "mangledName": "$s11Observation10ObservableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Navigation_Protocols",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ViewProvider",
-        "printedName": "ViewProvider",
-        "children": [
-          {
-            "kind": "AssociatedType",
-            "name": "Content",
-            "printedName": "Content",
-            "declKind": "AssociatedType",
-            "usr": "s:20Navigation_Protocols12ViewProviderP7ContentQa",
-            "mangledName": "$s20Navigation_Protocols12ViewProviderP7ContentQa",
-            "moduleName": "Navigation_Protocols",
-            "protocolReq": true
-          },
-          {
-            "kind": "Function",
-            "name": "destinationView",
-            "printedName": "destinationView()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.Content"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Navigation_Protocols12ViewProviderP011destinationC07ContentQzyF",
-            "mangledName": "$s20Navigation_Protocols12ViewProviderP011destinationC07ContentQzyF",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0 where τ_0_0 : Navigation_Protocols.ViewProvider>",
-            "sugared_genericSig": "<Self where Self : Navigation_Protocols.ViewProvider>",
-            "protocolReq": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:20Navigation_Protocols12ViewProviderP",
-        "mangledName": "$s20Navigation_Protocols12ViewProviderP",
-        "moduleName": "Navigation_Protocols",
-        "genericSig": "<τ_0_0 : Swift.Identifiable, τ_0_0.Content : SwiftUI.View>",
-        "sugared_genericSig": "<Self : Swift.Identifiable, Self.Content : SwiftUI.View>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PushNavigation",
-        "printedName": "PushNavigation",
-        "declKind": "Protocol",
-        "usr": "s:20Navigation_Protocols04PushA0P",
-        "mangledName": "$s20Navigation_Protocols04PushA0P",
-        "moduleName": "Navigation_Protocols",
-        "genericSig": "<τ_0_0 : Navigation_Protocols.ViewProvider, τ_0_0 : Swift.Hashable>",
-        "sugared_genericSig": "<Self : Navigation_Protocols.ViewProvider, Self : Swift.Hashable>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewProvider",
-            "printedName": "ViewProvider",
-            "usr": "s:20Navigation_Protocols12ViewProviderP",
-            "mangledName": "$s20Navigation_Protocols12ViewProviderP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ModalNavigation",
-        "printedName": "ModalNavigation",
-        "declKind": "Protocol",
-        "usr": "s:20Navigation_Protocols05ModalA0P",
-        "mangledName": "$s20Navigation_Protocols05ModalA0P",
-        "moduleName": "Navigation_Protocols",
-        "genericSig": "<τ_0_0 : Navigation_Protocols.ViewProvider>",
-        "sugared_genericSig": "<Self : Navigation_Protocols.ViewProvider>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewProvider",
-            "printedName": "ViewProvider",
-            "usr": "s:20Navigation_Protocols12ViewProviderP",
-            "mangledName": "$s20Navigation_Protocols12ViewProviderP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Destination",
-        "printedName": "Destination",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "push",
-            "printedName": "push",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "GenericFunction",
-                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation> (Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_0) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(τ_0_0) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Destination",
-                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_0"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_1"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_2"
-                          }
-                        ],
-                        "usr": "s:20Navigation_Protocols11DestinationO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Destination",
-                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_0"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_1"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_2"
-                          }
-                        ],
-                        "usr": "s:20Navigation_Protocols11DestinationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20Navigation_Protocols11DestinationO4pushyACyxq_q0_GxcAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
-            "mangledName": "$s20Navigation_Protocols11DestinationO4pushyACyxq_q0_GxcAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
-            "moduleName": "Navigation_Protocols"
-          },
-          {
-            "kind": "Var",
-            "name": "sheet",
-            "printedName": "sheet",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "GenericFunction",
-                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation> (Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_1) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(τ_0_1) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Destination",
-                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_0"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_1"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_2"
-                          }
-                        ],
-                        "usr": "s:20Navigation_Protocols11DestinationO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_1"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Destination",
-                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_0"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_1"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_2"
-                          }
-                        ],
-                        "usr": "s:20Navigation_Protocols11DestinationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20Navigation_Protocols11DestinationO5sheetyACyxq_q0_Gq_cAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
-            "mangledName": "$s20Navigation_Protocols11DestinationO5sheetyACyxq_q0_Gq_cAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
-            "moduleName": "Navigation_Protocols"
-          },
-          {
-            "kind": "Var",
-            "name": "fullScreen",
-            "printedName": "fullScreen",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "GenericFunction",
-                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation> (Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_2) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(τ_0_2) -> Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Destination",
-                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_0"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_1"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_2"
-                          }
-                        ],
-                        "usr": "s:20Navigation_Protocols11DestinationO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_2"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Destination",
-                        "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_0"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_1"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GenericTypeParam",
-                            "printedName": "τ_0_2"
-                          }
-                        ],
-                        "usr": "s:20Navigation_Protocols11DestinationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20Navigation_Protocols11DestinationO10fullScreenyACyxq_q0_Gq0_cAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
-            "mangledName": "$s20Navigation_Protocols11DestinationO10fullScreenyACyxq_q0_Gq0_cAEmAA04PushA0RzAA05ModalA0R_AaGR0_r1_lF",
-            "moduleName": "Navigation_Protocols"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:20Navigation_Protocols11DestinationO",
-        "mangledName": "$s20Navigation_Protocols11DestinationO",
-        "moduleName": "Navigation_Protocols",
-        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-        "sugared_genericSig": "<Push, Sheet, FullScreen where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           }
         ]
       }

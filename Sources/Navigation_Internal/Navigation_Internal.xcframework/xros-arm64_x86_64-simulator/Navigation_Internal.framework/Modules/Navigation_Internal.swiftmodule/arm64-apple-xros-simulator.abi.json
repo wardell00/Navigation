@@ -22,23 +22,6 @@
         "moduleName": "Navigation_Internal"
       },
       {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal"
-      },
-      {
         "kind": "TypeDecl",
         "name": "AlertView",
         "printedName": "AlertView",
@@ -885,23 +868,6 @@
         "moduleName": "Navigation_Internal"
       },
       {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal"
-      },
-      {
         "kind": "TypeDecl",
         "name": "_NavigationContainer",
         "printedName": "_NavigationContainer",
@@ -1125,67 +1091,44 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Navigation_Protocols",
+        "printedName": "Navigation_Protocols",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Navigation_Protocols",
+        "printedName": "Navigation_Protocols",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal"
+      },
+      {
         "kind": "TypeDecl",
         "name": "Binding",
         "printedName": "Binding",
         "children": [
-          {
-            "kind": "Var",
-            "name": "isPresented",
-            "printedName": "isPresented",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Binding",
-                "printedName": "SwiftUI.Binding<Swift.Bool>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:7SwiftUI7BindingV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvp",
-            "mangledName": "$s7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvp",
-            "moduleName": "Navigation_Internal",
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Binding",
-                    "printedName": "SwiftUI.Binding<Swift.Bool>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "usr": "s:7SwiftUI7BindingV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvg",
-                "mangledName": "$s7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvg",
-                "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0 where τ_0_0 == Navigation_Protocols.AlertPush?>",
-                "sugared_genericSig": "<Value where Value == Navigation_Protocols.AlertPush?>",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
           {
             "kind": "Var",
             "name": "isPresented",
@@ -1238,6 +1181,63 @@
                 "moduleName": "Navigation_Internal",
                 "genericSig": "<τ_0_0 where τ_0_0 == Navigation_Protocols.ConfirmationPush?>",
                 "sugared_genericSig": "<Value where Value == Navigation_Protocols.ConfirmationPush?>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isPresented",
+            "printedName": "isPresented",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvp",
+            "mangledName": "$s7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvp",
+            "moduleName": "Navigation_Internal",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Binding",
+                    "printedName": "SwiftUI.Binding<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI7BindingV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvg",
+                "mangledName": "$s7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0 where τ_0_0 == Navigation_Protocols.AlertPush?>",
+                "sugared_genericSig": "<Value where Value == Navigation_Protocols.AlertPush?>",
                 "isFromExtension": true,
                 "accessorKind": "get"
               }

@@ -15,14 +15,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hGnMiQYf87z4o6UcWvUDIUGIvq4QcZXT0hbGTQiIgbI=
+			mmCCLS6JXcw7KxPyYs3yQ6zMMTgCC9ZduNxRNevV3HA=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OJCTICPe/iXYSzgl6y9YrNuj1a9fpmXMTYG3rECd6cM=
+			e+auxQ8CzOq9lpqdfeowBQoKfH+3w6tDZsZiRECeV9M=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-macos.swiftdoc</key>
@@ -36,28 +36,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OJCTICPe/iXYSzgl6y9YrNuj1a9fpmXMTYG3rECd6cM=
+			e+auxQ8CzOq9lpqdfeowBQoKfH+3w6tDZsZiRECeV9M=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			utYabG+nVCpm2iELow/uxXIrvO1Ur1ecq3U/QYfDW8E=
+			FDxho8tls0Y/2i8OFlofsZAinx5BlvaCGTVg1BU4mbA=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hGnMiQYf87z4o6UcWvUDIUGIvq4QcZXT0hbGTQiIgbI=
+			mmCCLS6JXcw7KxPyYs3yQ6zMMTgCC9ZduNxRNevV3HA=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KCGSPisaR6b9OGtqJWnJEKx1D7sE0s6OYKeYguihtSs=
+			axPhwVRB+1apymSMvULwrxf8vg+uOzQCgBHUNWfSLOQ=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -71,14 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KCGSPisaR6b9OGtqJWnJEKx1D7sE0s6OYKeYguihtSs=
+			axPhwVRB+1apymSMvULwrxf8vg+uOzQCgBHUNWfSLOQ=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZWaOe4WLei21r0N2AquQOuC3pUJe1bv8WPV0SnwJP3k=
+			cYiKjKrH695UHcelejRfoYZiyjQE9HKZ47BUnHhXkGA=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>

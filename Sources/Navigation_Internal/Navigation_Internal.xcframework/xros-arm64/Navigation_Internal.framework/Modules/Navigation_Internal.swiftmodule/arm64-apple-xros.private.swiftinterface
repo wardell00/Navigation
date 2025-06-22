@@ -8,6 +8,13 @@ import SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_Concurrency.MainActor @preconcurrency public struct NavigationButtonListStyle<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(content: Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal0A15ButtonListStyleV4bodyQrvp", 0) __<Content>
+}
 @_Concurrency.MainActor @preconcurrency public struct ConfirmationDialogView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(confirmPush: SwiftUICore.Binding<Navigation_Protocols.ConfirmationPush?>, content: Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -46,15 +53,8 @@ extension SwiftUICore.Binding where Value == Navigation_Protocols.AlertPush? {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A10ButtonImplV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Content>
 }
-@_Concurrency.MainActor @preconcurrency public struct NavigationButtonListStyle<Content> : SwiftUICore.View where Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(content: Content)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal0A15ButtonListStyleV4bodyQrvp", 0) __<Content>
-}
+extension Navigation_Internal.NavigationButtonListStyle : Swift.Sendable {}
 extension Navigation_Internal.ConfirmationDialogView : Swift.Sendable {}
 extension Navigation_Internal._NavigationContainer : Swift.Sendable {}
 extension Navigation_Internal.AlertView : Swift.Sendable {}
 extension Navigation_Internal._NavigationButtonImpl : Swift.Sendable {}
-extension Navigation_Internal.NavigationButtonListStyle : Swift.Sendable {}

@@ -8,13 +8,6 @@ import SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_Concurrency.MainActor @preconcurrency public struct _NavigationContainer<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Protocols.NavigationRouter<Push, Sheet, FullScreen>>, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A9ContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Content>
-}
 extension SwiftUICore.Binding where Value == Navigation_Protocols.AlertPush? {
   public var isPresented: SwiftUICore.Binding<Swift.Bool> {
     get
@@ -53,8 +46,15 @@ extension SwiftUICore.Binding where Value == Navigation_Protocols.ConfirmationPu
     get
   }
 }
-extension Navigation_Internal._NavigationContainer : Swift.Sendable {}
+@_Concurrency.MainActor @preconcurrency public struct _NavigationContainer<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Protocols.NavigationRouter<Push, Sheet, FullScreen>>, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A9ContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Content>
+}
 extension Navigation_Internal.AlertView : Swift.Sendable {}
 extension Navigation_Internal._NavigationButtonImpl : Swift.Sendable {}
 extension Navigation_Internal.NavigationButtonListStyle : Swift.Sendable {}
 extension Navigation_Internal.ConfirmationDialogView : Swift.Sendable {}
+extension Navigation_Internal._NavigationContainer : Swift.Sendable {}
