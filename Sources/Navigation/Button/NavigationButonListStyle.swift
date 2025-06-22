@@ -6,24 +6,8 @@
 //
 
 import SwiftUI
+import Navigation_Internal
 
-struct NavigationButtonListStyle<Content: View>: View {
-    let content: Content
-    
-    init(content: Content) {
-        self.content = content
-    }
-    
-    var body: some View {
-        HStack {
-            content
-            Spacer()
-            Image(systemName: "chevron.forward")
-                .foregroundStyle(.secondary)
-        }
-        .foregroundStyle(.foreground)
-    }
-}
 
 public extension View {
     

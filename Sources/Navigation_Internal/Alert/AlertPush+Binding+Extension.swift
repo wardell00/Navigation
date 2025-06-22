@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Navigation_Protocols
 
 public extension Binding where Value == AlertPush? {
     var isPresented: Binding<Bool> {

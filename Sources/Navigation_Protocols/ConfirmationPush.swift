@@ -9,10 +9,10 @@ import SwiftUI
 
 public struct ConfirmationPush: Identifiable, @unchecked Sendable {
     public let id: UUID = UUID()
-    let title: LocalizedStringKey
-    let message: LocalizedStringKey
-    let titleVisibility: Visibility
-    let buttonContent: AnyView
+    public let title: LocalizedStringKey
+    public let message: LocalizedStringKey
+    public let titleVisibility: Visibility
+    public let buttonContent: AnyView
     
     init<Content: View>(
         title: LocalizedStringKey,

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Navigation_Protocols
 
 public extension Binding where Value == ConfirmationPush? {
     var isPresented: Binding<Bool> {

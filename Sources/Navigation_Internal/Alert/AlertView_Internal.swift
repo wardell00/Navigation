@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Navigation_Protocols
 
 public struct AlertView<Content: View>: View {
     let content: Content
