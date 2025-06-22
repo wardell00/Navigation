@@ -15,13 +15,16 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(name: "Navigation_Protocols"),
-        .target(
+        .binaryTarget(
             name: "Navigation_Internal",
-            dependencies: ["Navigation_Protocols"]),
+            path: "./Sources/Navigation_Internal/Navigation_Internal.xcframework"
+        ),
+        .binaryTarget(
+            name: "Navigation_Protocols",
+            path: "./Sources/Navigation_Protocols/Navigation_Protocols.xcframework"),
         .target(
             name: "Navigation",
-            dependencies: ["Navigation_Internal", "Navigation_Protocols"]
+            dependencies: ["Navigation_Protocols", "Navigation_Internal"]
         )
     ]
 )
