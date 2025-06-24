@@ -23,3 +23,59 @@ When added you can import the package like this:
 ```swift
 import Navigation
 ```
+
+## Navigation Protocols
+
+To make navigating possible create 3 enums. One for Push, one for Sheet and 
+one for FullScreen Cover.
+
+## Push Navigation
+
+```swift
+enum PushDestination: PushNavigation {
+
+var id: // Your IDs
+
+case // your cases
+
+func destinationView() -> some View {
+    switch self {
+      // your views
+    }
+  }
+}
+```
+
+## Sheet Navigation
+
+```swift
+enum SheetNavigation: ModalNavigation {
+
+var id: // Your IDs
+
+case // your cases
+
+func destinationView() -> some View {
+    switch self {
+      // your views
+    }
+  }
+}
+```
+
+## Fullscreen Cover Navigation
+
+```swift
+enum FullScreenNavigation: ModalNavigation {
+
+var id: // Your IDs
+
+case // your cases
+
+func destinationView() -> some View {
+    switch self {
+      // your views
+    }
+  }
+}
+```
