@@ -18,3 +18,8 @@ git@github.com:wardell00/Navigation.git
 ```bash
 https://github.com/wardell00/Navigation.git
 ```
+
+When added you can import the package like this:
+```swift
+import Navigation
+```
