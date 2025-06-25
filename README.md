@@ -79,3 +79,17 @@ func destinationView() -> some View {
   }
 }
 ```
+
+## Typealias (Optional)
+
+Generics can sometimes be a pain. To make things easier
+you can create a typealias.
+
+```swift
+import Navigation
+
+struct TypeAlias {
+    typealias Router = NavigationRouter<PushDestination, SheetNavigation, FullScreenNavigation> // <- Add your NavigationEnums
+    typealias Destin = Destination<PushDestination, SheetNavigation, FullScreenNavigation> // <- Add your NavigationEnums
+}
+```
