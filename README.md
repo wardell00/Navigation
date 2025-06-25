@@ -29,7 +29,7 @@ import Navigation
 To make navigating possible create 3 enums. One for Push, one for Sheet and 
 one for FullScreen Cover.
 
-## Push Navigation
+### Push Navigation
 
 ```swift
 enum PushDestination: PushNavigation {
@@ -46,7 +46,7 @@ func destinationView() -> some View {
 }
 ```
 
-## Sheet Navigation
+### Sheet Navigation
 
 ```swift
 enum SheetNavigation: ModalNavigation {
@@ -63,7 +63,7 @@ func destinationView() -> some View {
 }
 ```
 
-## Fullscreen Cover Navigation
+### Fullscreen Cover Navigation
 
 ```swift
 enum FullScreenNavigation: ModalNavigation {
