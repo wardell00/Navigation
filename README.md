@@ -93,3 +93,45 @@ struct TypeAlias {
     typealias Destin = Destination<PushDestination, SheetNavigation, FullScreenNavigation> // <- Add your NavigationEnums
 }
 ```
+
+## Features
+
+### NavigationRouter
+
+This class is respsonsible for the navigating logic.
+You can initialize it like this:
+
+**Without** Typealias
+```swift
+@State private var router: NavigationRouter<PushDestination, SheetNavigation, FullScreenNavigation> // <- Add your NavigationEnums = .init()
+```
+
+**With** Typealias
+```swift
+@State private var router: TypeAlias.Router = .init()
+```
+
+### NavigationContainer
+This view wraps your views inside a NavigationStack and provides the Navigation Environment.
+If you want to use the navigation package you have to wrap all your RootViews inside the NavigationContainer.
+
+```swift
+import Navigation
+
+struct Screen: View {
+    @State private var router: TypeAlias.Router = .init()
+
+    var body: some View {
+        NavigationContainer(router: router) {
+            YourRootView()
+        }
+    }
+}
+```
+All child views of ``YourRootView()`` can access your Router init like this:
+
+```swift
+@Environment(TypeAlias.Router.self) private var router
+```
+
+
