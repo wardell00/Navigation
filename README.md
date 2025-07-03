@@ -1,26 +1,37 @@
 # Navigation
 
-A modular, flexible, and type-safe navigation system for SwiftUI apps.
-This packages allows for clean architecture and scalable routing — supporting push, modal, and full screen transitions.
-This package also provides a reusable Alert and ConfirmationDialog.
+[![Swift](https://img.shields.io/badge/Swift-6.0-orange?logo=swift)](https://swift.org)
+[![iOS](https://img.shields.io/badge/iOS-18%2B-blue?logo=apple)](https://developer.apple.com/ios/)
+[![macOS](https://img.shields.io/badge/macOS-15%2B-blue?logo=apple)](https://developer.apple.com/macos/)
+[![SwiftUI](https://img.shields.io/badge/SwiftUI-compatible-green?logo=swift)](https://developer.apple.com/xcode/swiftui/)
+[![SPM](https://img.shields.io/badge/SPM-supported-informational?logo=swift)](https://swift.org/package-manager/)
+
+> A modular, type-safe, and scalable navigation system for SwiftUI apps.
+
+Navigation enables you to implement **clean architecture and flexible routing** using push, sheet, and fullscreen cover presentations — with built-in support for **alerts** and **confirmation dialogs**.
+
+---
 
 
 ## 🛠 Installation
 
-Open XCode and then navigate to `File -> Add Package Dependencies...`.
-In the searchbar paste in the following URL:
+In Xcode:
 
-**With SSH**
+> **File → Add Package Dependencies...**
+
+Paste the repository URL:
+
+**SSH**
 ```bash
 git@github.com:wardell00/Navigation.git
 ```
 
-**With HTTPS**
+**HTTPS**
 ```bash
 https://github.com/wardell00/Navigation.git
 ```
 
-When added you can import the package like this:
+Import the package in your files:
 ```swift
 import Navigation
 ```
