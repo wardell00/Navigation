@@ -2,6 +2,7 @@
 
 A modular, flexible, and type-safe navigation system for SwiftUI apps.
 This packages allows for clean architecture and scalable routing — supporting push, modal, and full screen transitions.
+This package also provides a reusable Alert and ConfirmationDialog.
 
 
 ## 🛠 Installation
@@ -193,6 +194,77 @@ struct Screen: View {
     .task {
       router.navigate(.sheet(.sheetOne))
     }
+  }
+}
+```
+
+## Alert
+
+The struct ``AlertPush`` provides convenient inits for Alerts.
+
+If you want to to show an alert without a specific button make use of this init:
+
+```swift
+let alert: AlertPush = .init(
+        title: "Your title",
+        message: "Your message"
+    ) 
+
+```
+This creates an alert with a title, message and a dismiss button.
+
+If you want your alert to have specific buttons make use of this init:
+
+```swift
+
+let alert: AlertPush = .init(
+       title: "Your title",
+       message: "Your message"
+) {
+  Button {
+
+  } label: {
+
+  }
+}
+```
+You can add as many button as you want. However I would suggest to limit the buttons to 3.
+
+### Extending AlertPush
+If you have many different alerts you want to show in your app the best way is to add them as a static variable or function to your AlertPush extension.
+
+```swift
+import Navigation
+
+extension AlertPush {
+
+  static func simpleAlert() -> Self {
+    .init(
+       title: "Simple Alert",
+       message: "This simple alert is shown using the navigation package"
+    )
+  }
+}
+```
+
+### How to show  the alert
+The following code shows an example how the alert can be shown.
+
+```swift
+import Navigation
+
+struct Screen: View {
+
+  @State private var alertPush: AlertPush? = nil
+
+  var body: some View {
+
+      Button {
+        alert = .simpleAlert()
+      } label: {
+        Text("Show Alert")
+      }
+      .alert($alertPush)
   }
 }
 ```
