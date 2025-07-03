@@ -34,9 +34,9 @@ one for FullScreen Cover.
 ```swift
 enum PushDestination: PushNavigation {
 
-var id: // Your IDs
+var id: // Your IDs (Can be string, uuid ...)
 
-case // your cases
+case pushOne // your cases
 
 func destinationView() -> some View {
     switch self {
@@ -51,9 +51,9 @@ func destinationView() -> some View {
 ```swift
 enum SheetNavigation: ModalNavigation {
 
-var id: // Your IDs
+var id: // Your IDs (Can be string, uuid ...)
 
-case // your cases
+case sheetOne // your cases
 
 func destinationView() -> some View {
     switch self {
@@ -70,7 +70,7 @@ enum FullScreenNavigation: ModalNavigation {
 
 var id: // Your IDs
 
-case // your cases
+case fullScreenOne // your cases (Can be string, uuid ...)
 
 func destinationView() -> some View {
     switch self {
@@ -134,4 +134,65 @@ All child views of ``YourRootView()`` can access your Router init like this:
 @Environment(TypeAlias.Router.self) private var router
 ```
 
+### NavigationButton
 
+With a click on this button you can navigate to a new page or open a sheet or fullscreen cover.
+To make your life a little bit more convenient create a file ``NavigationButton.swift`` and add this code:
+
+
+
+```swift
+import Navigation
+import SwiftUI
+
+struct NavigationButton<Content: View>: View {
+    
+    @Environment(TypeAlias.Router.self) private var router
+    let destination: TypeAlias.Destin
+    @ViewBuilder let label: () -> Content
+    
+    var body: some View {
+        @Bindable var bindingRouter = router
+        _NavigationButton(router: bindingRouter, destination: destination, label: label)
+    }
+}
+```
+
+To navigate to a new page use the button like this:
+
+```swift
+NavigationButton(destination: .push(.pushOne)) { 
+  // Your label
+}
+```
+
+To open to a sheet use the button like this:
+
+```swift
+NavigationButton(destination: .sheet(.sheetOne)) { 
+  // Your label
+}
+```
+
+To open to a fullscreen cover use the button like this:
+
+```swift
+NavigationButton(destination: .fullScreen(.fullScreenOne)) { 
+  // Your label
+}
+```
+
+If you want to navigate without a button. For example you might want to open a sheet when a specific screen appears you can do this:
+
+```swift
+struct Screen: View {
+  @Environment(TypeAlias.Router.self) private var router
+
+  var body: some View {
+    SwiftUIView()
+    .task {
+      router.navigate(.sheet(.sheetOne))
+    }
+  }
+}
+```
