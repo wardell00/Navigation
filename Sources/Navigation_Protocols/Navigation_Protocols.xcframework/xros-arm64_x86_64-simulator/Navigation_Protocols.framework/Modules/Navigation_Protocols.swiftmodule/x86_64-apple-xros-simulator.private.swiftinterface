@@ -26,7 +26,8 @@ public struct ConfirmationPush : Swift.Identifiable, @unchecked Swift.Sendable {
   public let message: SwiftUICore.LocalizedStringKey
   public let titleVisibility: SwiftUICore.Visibility
   public let buttonContent: SwiftUICore.AnyView
-  public init<Content>(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey, titleVisibility: SwiftUICore.Visibility = .automatic, @SwiftUICore.ViewBuilder buttonContent: @escaping () -> Content) where Content : SwiftUICore.View
+  public init<Content>(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey, titleVisibility: SwiftUICore.Visibility = .visible, @SwiftUICore.ViewBuilder buttonContent: @escaping () -> Content) where Content : SwiftUICore.View
+  public init<Content>(title: SwiftUICore.LocalizedStringKey = "", titleVisibility: SwiftUICore.Visibility = .hidden, @SwiftUICore.ViewBuilder buttonContent: @escaping () -> Content) where Content : SwiftUICore.View
   public typealias ID = Foundation.UUID
 }
 public struct AlertPush : Swift.Identifiable, @unchecked Swift.Sendable {

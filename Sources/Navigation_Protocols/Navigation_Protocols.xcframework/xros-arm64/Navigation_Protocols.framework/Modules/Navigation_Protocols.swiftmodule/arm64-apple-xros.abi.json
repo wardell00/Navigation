@@ -16,6 +16,409 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ConfirmationPush",
+        "printedName": "ConfirmationPush",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV2id10Foundation4UUIDVvp",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV2id10Foundation4UUIDVvp",
+            "moduleName": "Navigation_Protocols",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV2id10Foundation4UUIDVvg",
+                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV2id10Foundation4UUIDVvg",
+                "moduleName": "Navigation_Protocols",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvp",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvp",
+            "moduleName": "Navigation_Protocols",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalizedStringKey",
+                    "printedName": "SwiftUI.LocalizedStringKey",
+                    "usr": "s:7SwiftUI18LocalizedStringKeyV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvg",
+                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvg",
+                "moduleName": "Navigation_Protocols",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvp",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvp",
+            "moduleName": "Navigation_Protocols",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalizedStringKey",
+                    "printedName": "SwiftUI.LocalizedStringKey",
+                    "usr": "s:7SwiftUI18LocalizedStringKeyV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvg",
+                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvg",
+                "moduleName": "Navigation_Protocols",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titleVisibility",
+            "printedName": "titleVisibility",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "usr": "s:7SwiftUI10VisibilityO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV15titleVisibility7SwiftUI0F0Ovp",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV15titleVisibility7SwiftUI0F0Ovp",
+            "moduleName": "Navigation_Protocols",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Visibility",
+                    "printedName": "SwiftUI.Visibility",
+                    "usr": "s:7SwiftUI10VisibilityO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV15titleVisibility7SwiftUI0F0Ovg",
+                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV15titleVisibility7SwiftUI0F0Ovg",
+                "moduleName": "Navigation_Protocols",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buttonContent",
+            "printedName": "buttonContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvp",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvp",
+            "moduleName": "Navigation_Protocols",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyView",
+                    "printedName": "SwiftUI.AnyView",
+                    "usr": "s:7SwiftUI7AnyViewV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvg",
+                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvg",
+                "moduleName": "Navigation_Protocols",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:message:titleVisibility:buttonContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConfirmationPush",
+                "printedName": "Navigation_Protocols.ConfirmationPush",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:titleVisibility:buttonContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConfirmationPush",
+                "printedName": "Navigation_Protocols.ConfirmationPush",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV5title0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AG0F0OxyctcAG4ViewRzlufc",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AG0F0OxyctcAG4ViewRzlufc",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:20Navigation_Protocols16ConfirmationPushV",
+        "mangledName": "$s20Navigation_Protocols16ConfirmationPushV",
+        "moduleName": "Navigation_Protocols",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Protocols",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "AlertPush",
         "printedName": "AlertPush",
         "children": [
@@ -1487,360 +1890,18 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Navigation_Protocols",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ConfirmationPush",
-        "printedName": "ConfirmationPush",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Navigation_Protocols16ConfirmationPushV2id10Foundation4UUIDVvp",
-            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV2id10Foundation4UUIDVvp",
-            "moduleName": "Navigation_Protocols",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UUID",
-                    "printedName": "Foundation.UUID",
-                    "usr": "s:10Foundation4UUIDV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols16ConfirmationPushV2id10Foundation4UUIDVvg",
-                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV2id10Foundation4UUIDVvg",
-                "moduleName": "Navigation_Protocols",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "title",
-            "printedName": "title",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LocalizedStringKey",
-                "printedName": "SwiftUI.LocalizedStringKey",
-                "usr": "s:7SwiftUI18LocalizedStringKeyV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Navigation_Protocols16ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvp",
-            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvp",
-            "moduleName": "Navigation_Protocols",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LocalizedStringKey",
-                    "printedName": "SwiftUI.LocalizedStringKey",
-                    "usr": "s:7SwiftUI18LocalizedStringKeyV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols16ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvg",
-                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvg",
-                "moduleName": "Navigation_Protocols",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "message",
-            "printedName": "message",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LocalizedStringKey",
-                "printedName": "SwiftUI.LocalizedStringKey",
-                "usr": "s:7SwiftUI18LocalizedStringKeyV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Navigation_Protocols16ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvp",
-            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvp",
-            "moduleName": "Navigation_Protocols",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LocalizedStringKey",
-                    "printedName": "SwiftUI.LocalizedStringKey",
-                    "usr": "s:7SwiftUI18LocalizedStringKeyV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols16ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvg",
-                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvg",
-                "moduleName": "Navigation_Protocols",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "titleVisibility",
-            "printedName": "titleVisibility",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Visibility",
-                "printedName": "SwiftUI.Visibility",
-                "usr": "s:7SwiftUI10VisibilityO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Navigation_Protocols16ConfirmationPushV15titleVisibility7SwiftUI0F0Ovp",
-            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV15titleVisibility7SwiftUI0F0Ovp",
-            "moduleName": "Navigation_Protocols",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Visibility",
-                    "printedName": "SwiftUI.Visibility",
-                    "usr": "s:7SwiftUI10VisibilityO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols16ConfirmationPushV15titleVisibility7SwiftUI0F0Ovg",
-                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV15titleVisibility7SwiftUI0F0Ovg",
-                "moduleName": "Navigation_Protocols",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "buttonContent",
-            "printedName": "buttonContent",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyView",
-                "printedName": "SwiftUI.AnyView",
-                "usr": "s:7SwiftUI7AnyViewV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Navigation_Protocols16ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvp",
-            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvp",
-            "moduleName": "Navigation_Protocols",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AnyView",
-                    "printedName": "SwiftUI.AnyView",
-                    "usr": "s:7SwiftUI7AnyViewV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols16ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvg",
-                "mangledName": "$s20Navigation_Protocols16ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvg",
-                "moduleName": "Navigation_Protocols",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(title:message:titleVisibility:buttonContent:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ConfirmationPush",
-                "printedName": "Navigation_Protocols.ConfirmationPush",
-                "usr": "s:20Navigation_Protocols16ConfirmationPushV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LocalizedStringKey",
-                "printedName": "SwiftUI.LocalizedStringKey",
-                "usr": "s:7SwiftUI18LocalizedStringKeyV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LocalizedStringKey",
-                "printedName": "SwiftUI.LocalizedStringKey",
-                "usr": "s:7SwiftUI18LocalizedStringKeyV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Visibility",
-                "printedName": "SwiftUI.Visibility",
-                "hasDefaultArg": true,
-                "usr": "s:7SwiftUI10VisibilityO"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_0_0",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:20Navigation_Protocols16ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
-            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:20Navigation_Protocols16ConfirmationPushV",
-        "mangledName": "$s20Navigation_Protocols16ConfirmationPushV",
-        "moduleName": "Navigation_Protocols",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Identifiable",
-            "printedName": "Identifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ID",
-                "printedName": "ID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UUID",
-                    "printedName": "Foundation.UUID",
-                    "usr": "s:10Foundation4UUIDV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12IdentifiableP",
-            "mangledName": "$ss12IdentifiableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Protocols\/Navigation_Protocols\/ConfirmationPush.swift",
+      "kind": "StringLiteral",
+      "offset": 836,
+      "length": 2,
+      "value": "\"\""
+    },
     {
       "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Protocols\/Navigation_Protocols\/NavigationRouter.swift",
       "kind": "BooleanLiteral",
