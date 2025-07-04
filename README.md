@@ -109,32 +109,30 @@ enum AppNavigationConfig {
 }
 ```
 
-## Features
+## ✨ Features
 
 ### NavigationRouter
 
-This class is respsonsible for the navigating logic.
-You can initialize it like this:
+The ``NavigationRouter`` handles all routing logic.
 
-**Without** Typealias
+**Without** typealias:
 ```swift
 @State private var router: NavigationRouter<PushDestination, SheetNavigation, FullScreenNavigation> // <- Add your NavigationEnums = .init()
 ```
 
-**With** Typealias
+**With** typealias:
 ```swift
-@State private var router: TypeAlias.Router = .init()
+@State private var router: AppNavigationConfig.Router = .init()
 ```
 
 ### NavigationContainer
-This view wraps your views inside a NavigationStack and provides the Navigation Environment.
-If you want to use the navigation package you have to wrap all your RootViews inside the NavigationContainer.
+his view wraps your app in a ``NavigationStack`` and injects the router into the environment.
 
 ```swift
 import Navigation
 
 struct Screen: View {
-    @State private var router: TypeAlias.Router = .init()
+    @State private var router: AppNavigationConfig.Router = .init()
 
     var body: some View {
         NavigationContainer(router: router) {
@@ -143,18 +141,16 @@ struct Screen: View {
     }
 }
 ```
-All child views of ``YourRootView()`` can access your Router init like this:
+Access the router from any child view:
 
 ```swift
-@Environment(TypeAlias.Router.self) private var router
+@Environment(AppNavigationConfig.Router.self) private var router
 ```
 
 ### NavigationButton
 
-With a click on this button you can navigate to a new page or open a sheet or fullscreen cover.
-To make your life a little bit more convenient create a file ``NavigationButton.swift`` and add this code:
-
-
+Use ``NavigationButton`` to trigger navigation actions from UI elements.
+Create a helper view (e.g., ``NavigationButton.swift``):
 
 ```swift
 import Navigation
@@ -162,8 +158,8 @@ import SwiftUI
 
 struct NavigationButton<Content: View>: View {
     
-    @Environment(TypeAlias.Router.self) private var router
-    let destination: TypeAlias.Destin
+    @Environment(AppNavigationConfig.Router.self) private var router
+    let destination: AppNavigationConfig.Destin
     @ViewBuilder let label: () -> Content
     
     var body: some View {
@@ -173,7 +169,7 @@ struct NavigationButton<Content: View>: View {
 }
 ```
 
-To navigate to a new page use the button like this:
+**Push Navigation Example:**
 
 ```swift
 NavigationButton(destination: .push(.pushOne)) { 
@@ -181,7 +177,7 @@ NavigationButton(destination: .push(.pushOne)) {
 }
 ```
 
-To open to a sheet use the button like this:
+**Sheet Presentation Example:**
 
 ```swift
 NavigationButton(destination: .sheet(.sheetOne)) { 
@@ -189,7 +185,7 @@ NavigationButton(destination: .sheet(.sheetOne)) {
 }
 ```
 
-To open to a fullscreen cover use the button like this:
+**Fullscreen Cover Example:**
 
 ```swift
 NavigationButton(destination: .fullScreen(.fullScreenOne)) { 
@@ -197,11 +193,11 @@ NavigationButton(destination: .fullScreen(.fullScreenOne)) {
 }
 ```
 
-If you want to navigate without a button. For example you might want to open a sheet when a specific screen appears you can do this:
+**Programmatic Navigation (e.g. onAppear):**
 
 ```swift
 struct Screen: View {
-  @Environment(TypeAlias.Router.self) private var router
+  @Environment(AppNavigationConfig.Router.self) private var router
 
   var body: some View {
     SwiftUIView()
@@ -212,9 +208,8 @@ struct Screen: View {
 }
 ```
 
-## Alert
-
-The struct ``AlertPush`` provides convenient inits for Alerts.
+## 🚨 Alert
+``AlertPush`` provides a convenient way to show alerts using SwiftUI’s native .alert modifier.
 
 If you want to to show an alert without a specific button make use of this init:
 
