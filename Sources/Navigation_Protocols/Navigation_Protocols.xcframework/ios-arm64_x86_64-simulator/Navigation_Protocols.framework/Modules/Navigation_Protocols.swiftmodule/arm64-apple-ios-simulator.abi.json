@@ -16,6 +16,674 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "NavigationRouter",
+        "printedName": "NavigationRouter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "navigationPath",
+            "printedName": "navigationPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20Navigation_Protocols0A6RouterC14navigationPathSayxGvp",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC14navigationPathSayxGvp",
+            "moduleName": "Navigation_Protocols",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC14navigationPathSayxGvg",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC14navigationPathSayxGvg",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC14navigationPathSayxGvs",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC14navigationPathSayxGvs",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC14navigationPathSayxGvM",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC14navigationPathSayxGvM",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "presentedSheet",
+            "printedName": "presentedSheet",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_1?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvp",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvp",
+            "moduleName": "Navigation_Protocols",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_1?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvg",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvg",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_1?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvs",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvs",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC14presentedSheetq_SgvM",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC14presentedSheetq_SgvM",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "presentedFullScreen",
+            "printedName": "presentedFullScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_2?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvp",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvp",
+            "moduleName": "Navigation_Protocols",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_2?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvg",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvg",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_2?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvs",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvs",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20Navigation_Protocols0A6RouterC19presentedFullScreenq0_SgvM",
+                "mangledName": "$s20Navigation_Protocols0A6RouterC19presentedFullScreenq0_SgvM",
+                "moduleName": "Navigation_Protocols",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NavigationRouter",
+                "printedName": "Navigation_Protocols.NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:20Navigation_Protocols0A6RouterC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20Navigation_Protocols0A6RouterCACyxq_q0_Gycfc",
+            "mangledName": "$s20Navigation_Protocols0A6RouterCACyxq_q0_Gycfc",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setActive",
+            "printedName": "setActive()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Navigation_Protocols0A6RouterC9setActiveyyF",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC9setActiveyyF",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resignActive",
+            "printedName": "resignActive()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Navigation_Protocols0A6RouterC12resignActiveyyF",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC12resignActiveyyF",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "navigate",
+            "printedName": "navigate(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Destination",
+                "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:20Navigation_Protocols11DestinationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Navigation_Protocols0A6RouterC8navigate2toyAA11DestinationOyxq_q0_G_tF",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC8navigate2toyAA11DestinationOyxq_q0_G_tF",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "push",
+            "printedName": "push(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Navigation_Protocols0A6RouterC4pushyyxF",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC4pushyyxF",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Navigation_Protocols0A6RouterC7presentyyq_F",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC7presentyyq_F",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_2"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Navigation_Protocols0A6RouterC7presentyyq0_F",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC7presentyyq0_F",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deepLinkOpen",
+            "printedName": "deepLinkOpen(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Destination",
+                "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:20Navigation_Protocols11DestinationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Navigation_Protocols0A6RouterC12deepLinkOpen2toyAA11DestinationOyxq_q0_G_tF",
+            "mangledName": "$s20Navigation_Protocols0A6RouterC12deepLinkOpen2toyAA11DestinationOyxq_q0_G_tF",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20Navigation_Protocols0A6RouterC",
+        "mangledName": "$s20Navigation_Protocols0A6RouterC",
+        "moduleName": "Navigation_Protocols",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
+        "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Observable",
+            "printedName": "Observable",
+            "usr": "s:11Observation10ObservableP",
+            "mangledName": "$s11Observation10ObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Protocols",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ViewProvider",
         "printedName": "ViewProvider",
         "children": [
@@ -764,6 +1432,60 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:titleVisibility:buttonContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConfirmationPush",
+                "printedName": "Navigation_Protocols.ConfirmationPush",
+                "usr": "s:20Navigation_Protocols16ConfirmationPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20Navigation_Protocols16ConfirmationPushV5title0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AG0F0OxyctcAG4ViewRzlufc",
+            "mangledName": "$s20Navigation_Protocols16ConfirmationPushV5title0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AG0F0OxyctcAG4ViewRzlufc",
+            "moduleName": "Navigation_Protocols",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -1168,674 +1890,6 @@
             "mangledName": "$ss8SendableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Navigation_Protocols",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NavigationRouter",
-        "printedName": "NavigationRouter",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "navigationPath",
-            "printedName": "navigationPath",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[τ_0_0]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Navigation_Protocols0A6RouterC14navigationPathSayxGvp",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC14navigationPathSayxGvp",
-            "moduleName": "Navigation_Protocols",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[τ_0_0]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC14navigationPathSayxGvg",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC14navigationPathSayxGvg",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[τ_0_0]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC14navigationPathSayxGvs",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC14navigationPathSayxGvs",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC14navigationPathSayxGvM",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC14navigationPathSayxGvM",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "presentedSheet",
-            "printedName": "presentedSheet",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "τ_0_1?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_1"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvp",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvp",
-            "moduleName": "Navigation_Protocols",
-            "declAttributes": [
-              "Final",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "τ_0_1?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_1"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvg",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvg",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "τ_0_1?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_1"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvs",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC14presentedSheetq_Sgvs",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC14presentedSheetq_SgvM",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC14presentedSheetq_SgvM",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "presentedFullScreen",
-            "printedName": "presentedFullScreen",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "τ_0_2?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_2"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvp",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvp",
-            "moduleName": "Navigation_Protocols",
-            "declAttributes": [
-              "Final",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "τ_0_2?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_2"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvg",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvg",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "τ_0_2?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_2"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvs",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC19presentedFullScreenq0_Sgvs",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Navigation_Protocols0A6RouterC19presentedFullScreenq0_SgvM",
-                "mangledName": "$s20Navigation_Protocols0A6RouterC19presentedFullScreenq0_SgvM",
-                "moduleName": "Navigation_Protocols",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NavigationRouter",
-                "printedName": "Navigation_Protocols.NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_1"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_2"
-                  }
-                ],
-                "usr": "s:20Navigation_Protocols0A6RouterC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:20Navigation_Protocols0A6RouterCACyxq_q0_Gycfc",
-            "mangledName": "$s20Navigation_Protocols0A6RouterCACyxq_q0_Gycfc",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "setActive",
-            "printedName": "setActive()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Navigation_Protocols0A6RouterC9setActiveyyF",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC9setActiveyyF",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "resignActive",
-            "printedName": "resignActive()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Navigation_Protocols0A6RouterC12resignActiveyyF",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC12resignActiveyyF",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "navigate",
-            "printedName": "navigate(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Destination",
-                "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_1"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_2"
-                  }
-                ],
-                "usr": "s:20Navigation_Protocols11DestinationO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Navigation_Protocols0A6RouterC8navigate2toyAA11DestinationOyxq_q0_G_tF",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC8navigate2toyAA11DestinationOyxq_q0_G_tF",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "push",
-            "printedName": "push(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Navigation_Protocols0A6RouterC4pushyyxF",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC4pushyyxF",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "present",
-            "printedName": "present(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_1"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Navigation_Protocols0A6RouterC7presentyyq_F",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC7presentyyq_F",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "present",
-            "printedName": "present(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_2"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Navigation_Protocols0A6RouterC7presentyyq0_F",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC7presentyyq0_F",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "deepLinkOpen",
-            "printedName": "deepLinkOpen(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Destination",
-                "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_1"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_2"
-                  }
-                ],
-                "usr": "s:20Navigation_Protocols11DestinationO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Navigation_Protocols0A6RouterC12deepLinkOpen2toyAA11DestinationOyxq_q0_G_tF",
-            "mangledName": "$s20Navigation_Protocols0A6RouterC12deepLinkOpen2toyAA11DestinationOyxq_q0_G_tF",
-            "moduleName": "Navigation_Protocols",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:20Navigation_Protocols0A6RouterC",
-        "mangledName": "$s20Navigation_Protocols0A6RouterC",
-        "moduleName": "Navigation_Protocols",
-        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation>",
-        "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation>",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "Custom"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Observable",
-            "printedName": "Observable",
-            "usr": "s:11Observation10ObservableP",
-            "mangledName": "$s11Observation10ObservableP"
-          }
-        ]
       }
     ],
     "json_format_version": 8
@@ -1847,6 +1901,13 @@
       "offset": 471,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Protocols\/Navigation_Protocols\/ConfirmationPush.swift",
+      "kind": "StringLiteral",
+      "offset": 836,
+      "length": 2,
+      "value": "\"\""
     }
   ]
 }

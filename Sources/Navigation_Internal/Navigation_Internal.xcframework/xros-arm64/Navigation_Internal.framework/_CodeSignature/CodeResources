@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/Navigation_Protocols.framework/Navigation_Protocols</key>
 		<data>
-		mL80OWwK33f4SnZG96oksmgbGKc=
+		Ae5KIj+I7KvwdIFXShA88YXpUVk=
 		</data>
 		<key>Frameworks/Navigation_Protocols.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros.abi.json</key>
 		<data>
-		CBOBHJkEYseazeJEtz/z5iRyWrU=
+		0Lp5wg/ysHbniTd3+14RAp7PuWM=
 		</data>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<data>
-		3a6W3Oa15IpX8DMmNB0wnlccpQQ=
+		ZMx39YCv+joZkXkdOHkVyoOzuZ0=
 		</data>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros.swiftinterface</key>
 		<data>
-		3a6W3Oa15IpX8DMmNB0wnlccpQQ=
+		ZMx39YCv+joZkXkdOHkVyoOzuZ0=
 		</data>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros.swiftmodule</key>
 		<data>
-		By4KIBPet/mZrZXKIYUulFE4/A4=
+		DeilGeHo0k1xF9/8P+xs2GBj410=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pbiS5+rK7ZOW8FdM0WEscMehpkCLtoM+lFmmV6ALWaY=
+			2OFDrTpNIfDNHICantuFR5yJj0vVH+kN8hVbfPqQcJg=
 			</data>
 		</dict>
 		<key>Frameworks/Navigation_Protocols.framework/_CodeSignature/CodeResources</key>
@@ -68,14 +68,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BnNiC+Cy6BeIFQdXS8BD+v/GwaPgrxrbzL/6GX5FSRM=
+			Evi2MM9KFcwL/Jx+EIiPIfyVA5hxvEENtcI5nIcmzHw=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Kt7+AOt9iFkLGNzxGTzIrnLZcWwSFPqUlvO2CfJF24=
+			ynJyUdgK0F+6FrroPHDkSck6iobzkdqT0H/mo+4uqrw=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros.swiftdoc</key>
@@ -89,14 +89,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Kt7+AOt9iFkLGNzxGTzIrnLZcWwSFPqUlvO2CfJF24=
+			ynJyUdgK0F+6FrroPHDkSck6iobzkdqT0H/mo+4uqrw=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y5Finu/l7SMaP8Q2IQ8vWO9Um/ZFJsi//skfB/HWdhc=
+			g2Ae6G3ksmgKHRNdLMODegESCbZHxcv+0Qe1x/QSLUw=
 			</data>
 		</dict>
 	</dict>

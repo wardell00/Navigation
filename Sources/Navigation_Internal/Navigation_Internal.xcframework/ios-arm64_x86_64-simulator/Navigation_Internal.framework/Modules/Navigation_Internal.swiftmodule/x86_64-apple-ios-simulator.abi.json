@@ -22,6 +22,210 @@
         "moduleName": "Navigation_Internal"
       },
       {
+        "kind": "TypeDecl",
+        "name": "ConfirmationDialogView",
+        "printedName": "ConfirmationDialogView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(confirmPush:content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConfirmationDialogView",
+                "printedName": "Navigation_Internal.ConfirmationDialogView<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:19Navigation_Internal22ConfirmationDialogViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Navigation_Protocols.ConfirmationPush?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Navigation_Protocols.ConfirmationPush?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConfirmationPush",
+                        "printedName": "Navigation_Protocols.ConfirmationPush",
+                        "usr": "s:20Navigation_Protocols16ConfirmationPushV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Navigation_Internal22ConfirmationDialogViewV11confirmPush7contentACyxG7SwiftUI7BindingVy0A10_Protocols0cG0VSgG_xtcfc",
+            "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV11confirmPush7contentACyxG7SwiftUI7BindingVy0A10_Protocols0cG0VSgG_xtcfc",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal22ConfirmationDialogViewV4bodyQrvp",
+            "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV4bodyQrvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal22ConfirmationDialogViewV4bodyQrvg",
+                "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV4bodyQrvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19Navigation_Internal22ConfirmationDialogViewV",
+        "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Navigation_Protocols",
+        "printedName": "Navigation_Protocols",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal"
+      },
+      {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
@@ -859,210 +1063,6 @@
         "declKind": "Struct",
         "usr": "s:19Navigation_Internal0A15ButtonListStyleV",
         "mangledName": "$s19Navigation_Internal0A15ButtonListStyleV",
-        "moduleName": "Navigation_Internal",
-        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ConfirmationDialogView",
-        "printedName": "ConfirmationDialogView",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(confirmPush:content:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ConfirmationDialogView",
-                "printedName": "Navigation_Internal.ConfirmationDialogView<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:19Navigation_Internal22ConfirmationDialogViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Binding",
-                "printedName": "SwiftUI.Binding<Navigation_Protocols.ConfirmationPush?>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Navigation_Protocols.ConfirmationPush?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ConfirmationPush",
-                        "printedName": "Navigation_Protocols.ConfirmationPush",
-                        "usr": "s:20Navigation_Protocols16ConfirmationPushV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "usr": "s:7SwiftUI7BindingV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal22ConfirmationDialogViewV11confirmPush7contentACyxG7SwiftUI7BindingVy0A10_Protocols0cG0VSgG_xtcfc",
-            "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV11confirmPush7contentACyxG7SwiftUI7BindingVy0A10_Protocols0cG0VSgG_xtcfc",
-            "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:19Navigation_Internal22ConfirmationDialogViewV4bodyQrvp",
-            "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV4bodyQrvp",
-            "moduleName": "Navigation_Internal",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:19Navigation_Internal22ConfirmationDialogViewV4bodyQrvg",
-                "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV4bodyQrvg",
-                "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:19Navigation_Internal22ConfirmationDialogViewV",
-        "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV",
         "moduleName": "Navigation_Internal",
         "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
         "sugared_genericSig": "<Content where Content : SwiftUI.View>",
