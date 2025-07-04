@@ -276,3 +276,72 @@ struct Screen: View {
   }
 }
 ```
+
+## 🧾 Confirmation Dialog
+
+``ConfirmationPush`` provides a convenient way to show confirmation dialogs using SwiftUI’s native .confirmationDialog modifier.
+
+**Confirmation Dialog with Title and a Message**
+
+```swift
+let confirmation: ConfirmationPush = .init(
+  title: "This is a title",
+  message: "This is a message"
+) {
+  Button(role: .destructive) {
+
+  } {
+    Text("Delete")
+  }
+}
+```
+``titleVisibility`` is automatically set to ``.visible``.
+
+**Confirmation Dialog without a message**
+
+```swift
+let confirmation: ConfirmationPush = .init {
+  Button(role: .destructive) {
+
+  } {
+    Text("Delete")
+  }
+}
+```
+``titleVisibility`` is automatically set to ``.hidden``.
+
+**Organize Confirmation Dialogs via Extension**
+
+```swift
+extension ConfirmationPush {
+  static func confirmationForDelete() -> Self {
+    .init(
+      title: "Are you sure?",
+      message: "This action cannot be undone!"
+    ) {
+      Button(role: .destructive) {
+
+      } {
+        Text("Delete")
+      }
+    }
+  }
+}
+``` 
+
+**Presenting a confirmation dialog**
+
+```swift
+import Navigation
+
+struct Screen: View {
+  @State private var confirm: ConfirmationPush? = nil
+
+  var body: some View {
+    Button("Show Confirmation Dialog") {
+      confirm = .confirmationForDelete()
+    }
+    .confirmation($confirm)
+  }
+}
+```
