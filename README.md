@@ -211,7 +211,8 @@ struct Screen: View {
 ## 🚨 Alert
 ``AlertPush`` provides a convenient way to show alerts using SwiftUI’s native .alert modifier.
 
-If you want to to show an alert without a specific button make use of this init:
+
+**Simple Alert**
 
 ```swift
 let alert: AlertPush = .init(
@@ -220,9 +221,8 @@ let alert: AlertPush = .init(
     ) 
 
 ```
-This creates an alert with a title, message and a dismiss button.
 
-If you want your alert to have specific buttons make use of this init:
+**Alert with custom Buttons**
 
 ```swift
 
@@ -230,17 +230,17 @@ let alert: AlertPush = .init(
        title: "Your title",
        message: "Your message"
 ) {
-  Button {
+  Button(role: .destructive) {
 
   } label: {
-
+    Text("Delete")
   }
 }
 ```
+If you add a button with the role ``.destructive`` SwiftUI adds a cancel button automatically.
 You can add as many button as you want. However I would suggest to limit the buttons to 3.
 
-### Extending AlertPush
-If you have many different alerts you want to show in your app the best way is to add them as a static variable or function to your AlertPush extension.
+**Organize Alerts via Extension**
 
 ```swift
 import Navigation
@@ -256,8 +256,7 @@ extension AlertPush {
 }
 ```
 
-### How to show  the alert
-The following code shows an example how the alert can be shown.
+**Presenting Alert**
 
 ```swift
 import Navigation
