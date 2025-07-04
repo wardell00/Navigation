@@ -36,42 +36,46 @@ Import the package in your files:
 import Navigation
 ```
 
-## Navigation Protocols
+## 🚦 Navigation Protocols
 
-To make navigating possible create 3 enums. One for Push, one for Sheet and 
-one for FullScreen Cover.
+To define your navigation structure, create three enums:
+
+- One for push navigation
+- One for sheet presentation
+- One for fullscreen cover
 
 ### Push Navigation
 
 ```swift
 enum PushDestination: PushNavigation {
+    var id: String { ... } // or UUID, etc.
 
-var id: // Your IDs (Can be string, uuid ...)
+    case pushOne
 
-case pushOne // your cases
-
-func destinationView() -> some View {
-    switch self {
-      // your views
+    func destinationView() -> some View {
+        switch self {
+        case .pushOne:
+            // return your view here
+        }
     }
-  }
 }
+
 ```
 
 ### Sheet Navigation
 
 ```swift
 enum SheetNavigation: ModalNavigation {
+    var id: String { ... }
 
-var id: // Your IDs (Can be string, uuid ...)
+    case sheetOne
 
-case sheetOne // your cases
-
-func destinationView() -> some View {
-    switch self {
-      // your views
+    func destinationView() -> some View {
+        switch self {
+        case .sheetOne:
+            // return your view here
+        }
     }
-  }
 }
 ```
 
@@ -79,30 +83,29 @@ func destinationView() -> some View {
 
 ```swift
 enum FullScreenNavigation: ModalNavigation {
+    var id: String { ... }
 
-var id: // Your IDs
+    case fullScreenOne
 
-case fullScreenOne // your cases (Can be string, uuid ...)
-
-func destinationView() -> some View {
-    switch self {
-      // your views
+    func destinationView() -> some View {
+        switch self {
+        case .fullScreenOne:
+            // return your view here
+        }
     }
-  }
 }
 ```
 
-## Typealias (Optional)
+## 🧩 Typealias (Optional)
 
-Generics can sometimes be a pain. To make things easier
-you can create a typealias.
+To simplify generic usage, define a central alias:
 
 ```swift
 import Navigation
 
-struct TypeAlias {
-    typealias Router = NavigationRouter<PushDestination, SheetNavigation, FullScreenNavigation> // <- Add your NavigationEnums
-    typealias Destin = Destination<PushDestination, SheetNavigation, FullScreenNavigation> // <- Add your NavigationEnums
+enum AppNavigationConfig {
+    typealias Router = NavigationRouter<PushDestination, SheetNavigation, FullScreenNavigation>
+    typealias Destin = Destination<PushDestination, SheetNavigation, FullScreenNavigation>
 }
 ```
 
