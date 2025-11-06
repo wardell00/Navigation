@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		5tST6Orj4YwJR0eCB/uBuA2aAys=
+		dEkODma5b0k6h05SPUq+4cBd2lM=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
-		uTBfLNv/7nmgQVFYeQLsR8M73Ms=
+		kd2OC8YcJcIdTC57RzH6sQeVV3U=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		JoiYOpuR1MsJ1dv0fAvI7lv7eE8=
+		rUjT8diCCIri7Z8Nyrf/UdZTuoo=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		YV5ZqhJLgSEFr9hQp2A7tqX8nMk=
+		7twRLAjfz6FbZuF6+qQZCUbe868=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		JoiYOpuR1MsJ1dv0fAvI7lv7eE8=
+		rUjT8diCCIri7Z8Nyrf/UdZTuoo=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		U9D29s7EjJEnbMQoXVu5dO11FHA=
+		URQ2TL0qKYUYY8nRkMhl30N7Ce8=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<data>
-		uTBfLNv/7nmgQVFYeQLsR8M73Ms=
+		kd2OC8YcJcIdTC57RzH6sQeVV3U=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<data>
-		pojTxOTxICPYnANLZ8Z4QMRFK2g=
+		HcCKgEsxXxRTLZov+GuSCNLmtM8=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<data>
-		ZHicUoDFAt2RJaEGQT/ZO8VdzwQ=
+		2/kFWjL/+bdgvXpMD6KEjbfHRWs=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<data>
-		pojTxOTxICPYnANLZ8Z4QMRFK2g=
+		HcCKgEsxXxRTLZov+GuSCNLmtM8=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<data>
-		CEKLJ/1XEz3D8fMK6FgO0ZNPBYA=
+		y8lYlqYAJBUHanZ4iZOrSNIfEjE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q3/OBRRAfe0Jsb8YiwzOU04U/SuQosb+orVvlDeVQ9o=
+			SiaYKh7lWf04hg+uplcj4xgzmrbV77BJL/z1PvT1mYg=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RaJdYupFzglob5+7C40q2WV2fmHtU9R3I82okBP7Woo=
+			g545nXlt4VxUXjphC79lXOezMW69c4E7neR2Rdpqjvc=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CqBN5A9XwUVm061qNCKXy/+ujWC/hRJlTcsuNhDJFTo=
+			qBiTTD5aiSuk61AN2wONRtWFyuz/0fOr4OxDg8HUhII=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RaJdYupFzglob5+7C40q2WV2fmHtU9R3I82okBP7Woo=
+			g545nXlt4VxUXjphC79lXOezMW69c4E7neR2Rdpqjvc=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dcypqDf9E7NgWr46tFL/KxWVSKgiHAsKLv/pqOPijvg=
+			taJ4zpjpensx2n45VUyW4x3CkKC8aynvibn3bo9f9Ng=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q3/OBRRAfe0Jsb8YiwzOU04U/SuQosb+orVvlDeVQ9o=
+			SiaYKh7lWf04hg+uplcj4xgzmrbV77BJL/z1PvT1mYg=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EX7Cpw/5/voeMAckRbc7JU6M0VXS0yGbrR6W/ZgSumk=
+			gGhqlLD6r424fWXiLFOKyOdPrxwwqv738z8qU15IT7s=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AK34TTLVompLP43JFfc0RrFPo1cuzXojZagz2Us78ik=
+			6NEE49zRQAxwlc1gw76PBhggx6Em9Tg+z7e0920P2+M=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EX7Cpw/5/voeMAckRbc7JU6M0VXS0yGbrR6W/ZgSumk=
+			gGhqlLD6r424fWXiLFOKyOdPrxwwqv738z8qU15IT7s=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/x86_64-apple-xros-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X4bosh0c9+6ff7I+g2PpDXoPpEyrP4xkrJUgYKoxnJ0=
+			pDIkp/H2itxDocnjYkzS9lkx6KrCrOMkLJ14S95HoDw=
 			</data>
 		</dict>
 	</dict>
