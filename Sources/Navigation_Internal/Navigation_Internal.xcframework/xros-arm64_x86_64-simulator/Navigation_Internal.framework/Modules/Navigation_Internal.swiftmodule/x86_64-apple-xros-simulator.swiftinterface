@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-xros2.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Navigation_Internal
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Navigation_Protocols
 import Swift
 import SwiftUI
@@ -14,7 +14,9 @@ extension SwiftUICore.Binding where Value == Navigation_Protocols.AlertPush? {
   }
 }
 @_Concurrency.MainActor @preconcurrency public struct AlertView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(content: Content, alertPush: SwiftUICore.Binding<Navigation_Protocols.AlertPush?>)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -35,7 +37,9 @@ extension SwiftUICore.Binding where Value == Navigation_Protocols.AlertPush? {
   public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal0A15ButtonListStyleV4bodyQrvp", 0) __<Content>
 }
 @_Concurrency.MainActor @preconcurrency public struct ConfirmationDialogView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(confirmPush: SwiftUICore.Binding<Navigation_Protocols.ConfirmationPush?>, content: Content)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }

@@ -6,27 +6,27 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		Elw0OpE3aVbvqCZr3hJ5QsS9ynk=
+		f2Z68aqozO9kOhj8/M0BlIAFqPY=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		C1v89NXW0hjFztls/o4wf4gQFB4=
+		kd2OC8YcJcIdTC57RzH6sQeVV3U=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		f5Rr8drGnDy0lCzcEApULEbYwDo=
+		PMvVIxM0X4hDuLR9xOMPijk4Z1Y=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		iiR3Pxd1j17sFLMcA1Sh8xyYqC8=
+		IaGpO3rJ4KO68HfTMHgvQdZpXrQ=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		f5Rr8drGnDy0lCzcEApULEbYwDo=
+		PMvVIxM0X4hDuLR9xOMPijk4Z1Y=
 		</data>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		4ruXeTGu2QqrxbgAUsiWO6usExI=
+		YwIPeanxI9KfrzY/aSlHnKvYAZs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,35 +35,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d7GEiuMLDFGLdSGYCZkwoipONcJW2qMbEu1WWB0KR/Y=
+			SiaYKh7lWf04hg+uplcj4xgzmrbV77BJL/z1PvT1mYg=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f8I/K0ZN5EJOjHmGvcyZ/kSEEnjT2FyPmq93JTZudaE=
+			l61twacana6u0DxMq/46M8N8umRqc0kUfcwdWKjz9VY=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V5ycynyN3LbDEe/mjzXwhVCDuSXkRnve+Yy0EqR8qr4=
+			i3RagI0nWs3CSfjF51hTFogHBiWTfRdACMKwOLOdp+8=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f8I/K0ZN5EJOjHmGvcyZ/kSEEnjT2FyPmq93JTZudaE=
+			l61twacana6u0DxMq/46M8N8umRqc0kUfcwdWKjz9VY=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Protocols.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qMPvBdufwQIDBzLBjhm0Sni//tOsbYphWW8YycfVGKI=
+			3jcKfKSDb9kxroUpN1B1WXFd2AeUcH2pf1SPxRuKM7M=
 			</data>
 		</dict>
 	</dict>

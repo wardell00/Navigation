@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		KjRpqK1UXuBRXXCfgXvdlnSd5jY=
+		lL0SrWjxcxoZou3DoRYa5y5HY8c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,7 +15,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Xifv26+1SWYpbBTwntbHoTq2aHo=
+			zVqXv5JsqMtSSREQDWnSXvEBFPI=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.LoewenDev.Navigation-Protocols" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Alexander Loewe (NGDK5KPP2T)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -24,77 +24,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lq8skZeOnAwwm/dko2xrUC1suuyxOhWWwJv/9mO5KtE=
+			+yr4I9TrGCMKFdXzRwaaFPZZ984hUTg+XFfD+CkVuXk=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W67I+79Ji+kgB9C43mzNTpztwjZYJGPqM8lvU8R/sI4=
+			Xb4JxQWyws7mtz9XcamgZ6LJanR0q0qy8Grmd5rzqto=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xospY99AszzR3lJ4Q64CA7xqiXlRvnha/91kJ5YZqJQ=
+			rEbiilo3bqt9jxod8nWc1G2TXjmMENoM22JAJGYzh34=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W67I+79Ji+kgB9C43mzNTpztwjZYJGPqM8lvU8R/sI4=
+			Xb4JxQWyws7mtz9XcamgZ6LJanR0q0qy8Grmd5rzqto=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nhIE9HZ3QX/kyZ4Z/afYzTVViREXyO4N+Vh4JGFkezs=
+			AUSL3NzB7XlcBS3VRNukrNvz4VXoQOHtn+ld9N8Ur/I=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lq8skZeOnAwwm/dko2xrUC1suuyxOhWWwJv/9mO5KtE=
+			+yr4I9TrGCMKFdXzRwaaFPZZ984hUTg+XFfD+CkVuXk=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			buW45MqJyhHfK9GsKTO0FAWJIE+JawFZyjyPllKQt40=
+			x0ptdYW9SsTaiwvEUrCU4rGPYU9ufpLOASOzxGpXRxo=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JfCya0PupyFESGglr4UdpjwWv/x8WXHdk5DKbIExUIc=
+			W4cNMFcR7jWOg+Crogn6wn52ipXgS3Yj84mLz/mM+6M=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			buW45MqJyhHfK9GsKTO0FAWJIE+JawFZyjyPllKQt40=
+			x0ptdYW9SsTaiwvEUrCU4rGPYU9ufpLOASOzxGpXRxo=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RnSPFCvn8B1LDFFGUqoU0nfBTCNv4umGPAXb+cEXetk=
+			t1xhOmQZ1B1GfBeWey+pi/hPm7bhSDX1NmXJPLaXIjY=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FvYHSWa0VERt/VQacXxxFWZhVzNslhZuOEZxzYBPtJc=
+			YTU3yIuoyVQLpLF0b9ITOT31JbWJvbtW5JomLfozfwc=
 			</data>
 		</dict>
 	</dict>

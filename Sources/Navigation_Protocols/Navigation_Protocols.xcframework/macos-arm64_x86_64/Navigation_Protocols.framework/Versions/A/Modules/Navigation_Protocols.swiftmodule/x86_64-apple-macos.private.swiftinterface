@@ -1,12 +1,21 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-macos15.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Navigation_Protocols
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Swift
 import SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct AlertPush : Swift.Identifiable, @unchecked Swift.Sendable {
+  public let id: Foundation.UUID
+  public let title: SwiftUICore.LocalizedStringKey
+  public let message: SwiftUICore.LocalizedStringKey
+  public let buttonContent: SwiftUICore.AnyView?
+  public init<Content>(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey, @SwiftUICore.ViewBuilder buttonContent: () -> Content) where Content : SwiftUICore.View
+  public init(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey)
+  public typealias ID = Foundation.UUID
+}
 public struct ConfirmationPush : Swift.Identifiable, @unchecked Swift.Sendable {
   public let id: Foundation.UUID
   public let title: SwiftUICore.LocalizedStringKey
@@ -17,14 +26,18 @@ public struct ConfirmationPush : Swift.Identifiable, @unchecked Swift.Sendable {
   public init<Content>(title: SwiftUICore.LocalizedStringKey = "", titleVisibility: SwiftUICore.Visibility = .hidden, @SwiftUICore.ViewBuilder buttonContent: @escaping () -> Content) where Content : SwiftUICore.View
   public typealias ID = Foundation.UUID
 }
-public struct AlertPush : Swift.Identifiable, @unchecked Swift.Sendable {
-  public let id: Foundation.UUID
-  public let title: SwiftUICore.LocalizedStringKey
-  public let message: SwiftUICore.LocalizedStringKey
-  public let buttonContent: SwiftUICore.AnyView?
-  public init<Content>(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey, @SwiftUICore.ViewBuilder buttonContent: () -> Content) where Content : SwiftUICore.View
-  public init(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey)
-  public typealias ID = Foundation.UUID
+public protocol ViewProvider : Swift.Identifiable {
+  associatedtype Content : SwiftUICore.View
+  @SwiftUICore.ViewBuilder func destinationView() -> Self.Content
+}
+public protocol PushNavigation : Navigation_Protocols.ViewProvider, Swift.Hashable {
+}
+public protocol ModalNavigation : Navigation_Protocols.ViewProvider {
+}
+public enum Destination<Push, Sheet, FullScreen> where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation {
+  case push(_: Push)
+  case sheet(_: Sheet)
+  case fullScreen(_: FullScreen)
 }
 final public class NavigationRouter<PushNav, SheetNav, FullScreenNav> where PushNav : Navigation_Protocols.PushNavigation, SheetNav : Navigation_Protocols.ModalNavigation, FullScreenNav : Navigation_Protocols.ModalNavigation {
   final public var navigationPath: [PushNav] {
@@ -32,16 +45,20 @@ final public class NavigationRouter<PushNav, SheetNav, FullScreenNav> where Push
     set
     _modify
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var presentedSheet: SheetNav? {
     get
     set
     _modify
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var presentedFullScreen: FullScreenNav? {
     get
     set
     _modify
   }
+  #endif
   public init()
   @objc deinit
 }
@@ -56,18 +73,5 @@ extension Navigation_Protocols.NavigationRouter {
   final public func present(_ destination: FullScreenNav)
   final public func deepLinkOpen(to destination: Navigation_Protocols.Destination<PushNav, SheetNav, FullScreenNav>)
 }
-extension Navigation_Protocols.NavigationRouter : Observation.Observable {
-}
-public protocol ViewProvider : Swift.Identifiable {
-  associatedtype Content : SwiftUICore.View
-  @SwiftUICore.ViewBuilder func destinationView() -> Self.Content
-}
-public protocol PushNavigation : Navigation_Protocols.ViewProvider, Swift.Hashable {
-}
-public protocol ModalNavigation : Navigation_Protocols.ViewProvider {
-}
-public enum Destination<Push, Sheet, FullScreen> where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation {
-  case push(_: Push)
-  case sheet(_: Sheet)
-  case fullScreen(_: FullScreen)
+extension Navigation_Protocols.NavigationRouter : nonisolated Observation.Observable {
 }
