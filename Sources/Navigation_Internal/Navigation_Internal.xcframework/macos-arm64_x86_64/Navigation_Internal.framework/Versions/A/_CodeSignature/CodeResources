@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		lL0SrWjxcxoZou3DoRYa5y5HY8c=
+		wsk777KhftGoTLUkTnlmwbsLSgE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,10 +15,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			zVqXv5JsqMtSSREQDWnSXvEBFPI=
+			QU4Ngd6LufmPI98fTWCLVRFYRLg=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.LoewenDev.Navigation-Protocols" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Alexander Loewe (NGDK5KPP2T)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "com.LoewenDev.NavigationProtocolsFR" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Alexander Loewe (NGDK5KPP2T)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-macos.abi.json</key>
 		<dict>
@@ -94,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YTU3yIuoyVQLpLF0b9ITOT31JbWJvbtW5JomLfozfwc=
+			gxJVk+7bhxwZKTm696Dml77i1X9ZgMVrQhOWCEMK6EQ=
 			</data>
 		</dict>
 	</dict>

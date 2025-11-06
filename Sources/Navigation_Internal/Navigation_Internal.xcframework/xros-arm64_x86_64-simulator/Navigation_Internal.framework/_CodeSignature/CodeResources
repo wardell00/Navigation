@@ -6,19 +6,19 @@
 	<dict>
 		<key>Frameworks/Navigation_Protocols.framework/Info.plist</key>
 		<data>
-		dEkODma5b0k6h05SPUq+4cBd2lM=
+		hRz2xiHOtd6I3GN8e8QfS47Pu3w=
 		</data>
 		<key>Frameworks/Navigation_Protocols.framework/Navigation_Protocols</key>
 		<data>
-		Jb98ToJJ3om3+PaQOtcvfGF3138=
+		c409di/m62fNbuLL6C50IkjW5AY=
 		</data>
 		<key>Frameworks/Navigation_Protocols.framework/_CodeSignature/CodeResources</key>
 		<data>
-		iJPTjXQ83EL6tR3vxZcIyCMvrHk=
+		T3WzeDaAw4SLTYQvipxc68RC6GM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WUlO4kjeecX2IjEW8nkTMQ+eEKU=
+		tBpamMtaiNsCk+b5uU9ev1fSZo0=
 		</data>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
 		<data>
@@ -67,21 +67,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JtJe4lmtSqnlFQ6tWoU2tzyiSGCgouGMw8UlsI9dbIk=
+			HWpsQ/ylufFhifg5vbv1xLR7KWFHDM8lrKF5hzEQqZM=
 			</data>
 		</dict>
 		<key>Frameworks/Navigation_Protocols.framework/Navigation_Protocols</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L3hd4ZVgNMpdBhlAepF0DFymRQQqQZJ/dxJraUDgTRk=
+			5fmMVEX1nqf4YCWZ5U9QD+EsVvel3XTiC4elHYayEwI=
 			</data>
 		</dict>
 		<key>Frameworks/Navigation_Protocols.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RfcJfCOPvCX3qw7GgJsIOPUM9EuGezB7N2FJkapyhns=
+			K84C5HsOW35QK9clWzaj4ePq2xhp/ea1yPsnWXkTvi0=
 			</data>
 		</dict>
 		<key>Modules/Navigation_Internal.swiftmodule/arm64-apple-xros-simulator.abi.json</key>
