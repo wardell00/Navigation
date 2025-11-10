@@ -19,12 +19,9 @@ let package = Package(
             name: "Navigation_Internal",
             path: "./Sources/Navigation_Internal/Navigation_Internal.xcframework"
         ),
-        .binaryTarget(
-            name: "Navigation_Protocols",
-            path: "./Sources/Navigation_Protocols/Navigation_Protocols.xcframework"),
         .target(
             name: "Navigation",
-            dependencies: ["Navigation_Protocols", "Navigation_Internal"]
+            dependencies: ["Navigation_Internal"]
         )
     ]
 )

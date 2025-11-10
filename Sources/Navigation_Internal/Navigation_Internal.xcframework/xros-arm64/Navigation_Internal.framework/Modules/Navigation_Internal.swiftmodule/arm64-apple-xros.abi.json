@@ -16,13 +16,6 @@
       },
       {
         "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal"
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -30,13 +23,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal"
       },
       {
         "kind": "TypeDecl",
@@ -69,18 +55,18 @@
               {
                 "kind": "TypeNominal",
                 "name": "Binding",
-                "printedName": "SwiftUI.Binding<Navigation_Protocols.AlertPush?>",
+                "printedName": "SwiftUI.Binding<Navigation_Internal._AlertPush?>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Navigation_Protocols.AlertPush?",
+                    "printedName": "Navigation_Internal._AlertPush?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AlertPush",
-                        "printedName": "Navigation_Protocols.AlertPush",
-                        "usr": "s:20Navigation_Protocols9AlertPushV"
+                        "name": "_AlertPush",
+                        "printedName": "Navigation_Internal._AlertPush",
+                        "usr": "s:19Navigation_Internal10_AlertPushV"
                       }
                     ],
                     "usr": "s:Sq"
@@ -90,8 +76,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal9AlertViewV7content9alertPushACyxGx_7SwiftUI7BindingVy0A10_Protocols0cG0VSgGtcfc",
-            "mangledName": "$s19Navigation_Internal9AlertViewV7content9alertPushACyxGx_7SwiftUI7BindingVy0A10_Protocols0cG0VSgGtcfc",
+            "usr": "s:19Navigation_Internal9AlertViewV7content9alertPushACyxGx_7SwiftUI7BindingVyAA01_cG0VSgGtcfc",
+            "mangledName": "$s19Navigation_Internal9AlertViewV7content9alertPushACyxGx_7SwiftUI7BindingVyAA01_cG0VSgGtcfc",
             "moduleName": "Navigation_Internal",
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
             "sugared_genericSig": "<Content where Content : SwiftUI.View>",
@@ -236,13 +222,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal"
-      },
-      {
         "kind": "TypeDecl",
         "name": "_NavigationButtonImpl",
         "printedName": "_NavigationButtonImpl",
@@ -283,12 +262,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Bindable",
-                "printedName": "SwiftUI.Bindable<Navigation_Protocols.NavigationRouter<τ_0_0, τ_0_1, τ_0_2>>",
+                "printedName": "SwiftUI.Bindable<Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NavigationRouter",
-                    "printedName": "Navigation_Protocols.NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                    "name": "_NavigationRouter",
+                    "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -306,15 +285,15 @@
                         "printedName": "τ_0_2"
                       }
                     ],
-                    "usr": "s:20Navigation_Protocols0A6RouterC"
+                    "usr": "s:19Navigation_Internal01_A6RouterC"
                   }
                 ],
                 "usr": "s:7SwiftUI8BindableV"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Destination",
-                "printedName": "Navigation_Protocols.Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "name": "_Destination",
+                "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -332,7 +311,7 @@
                     "printedName": "τ_0_2"
                   }
                 ],
-                "usr": "s:20Navigation_Protocols11DestinationO"
+                "usr": "s:19Navigation_Internal12_DestinationO"
               },
               {
                 "kind": "TypeFunc",
@@ -353,11 +332,11 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal01_A10ButtonImplV6router11destination5labelACyxq_q0_q1_G7SwiftUI8BindableVy0A10_Protocols0A6RouterCyxq_q0_GG_AK11DestinationOyxq_q0_Gq1_yctcfc",
-            "mangledName": "$s19Navigation_Internal01_A10ButtonImplV6router11destination5labelACyxq_q0_q1_G7SwiftUI8BindableVy0A10_Protocols0A6RouterCyxq_q0_GG_AK11DestinationOyxq_q0_Gq1_yctcfc",
+            "usr": "s:19Navigation_Internal01_A10ButtonImplV6router11destination5labelACyxq_q0_q1_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_GG_AA12_DestinationOyxq_q0_Gq1_yctcfc",
+            "mangledName": "$s19Navigation_Internal01_A10ButtonImplV6router11destination5labelACyxq_q0_q1_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_GG_AA12_DestinationOyxq_q0_Gq1_yctcfc",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation, τ_0_3 : SwiftUI.View>",
-            "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUI.View>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
+            "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -417,8 +396,8 @@
                 "usr": "s:19Navigation_Internal01_A10ButtonImplV4bodyQrvg",
                 "mangledName": "$s19Navigation_Internal01_A10ButtonImplV4bodyQrvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation, τ_0_3 : SwiftUI.View>",
-                "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUI.View>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
+                "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
                 "accessorKind": "get"
               }
             ]
@@ -428,8 +407,8 @@
         "usr": "s:19Navigation_Internal01_A10ButtonImplV",
         "mangledName": "$s19Navigation_Internal01_A10ButtonImplV",
         "moduleName": "Navigation_Internal",
-        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation, τ_0_3 : SwiftUI.View>",
-        "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUI.View>",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -674,13 +653,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
-        "declKind": "Import",
-        "moduleName": "Navigation_Internal"
-      },
-      {
         "kind": "TypeDecl",
         "name": "ConfirmationDialogView",
         "printedName": "ConfirmationDialogView",
@@ -706,18 +678,18 @@
               {
                 "kind": "TypeNominal",
                 "name": "Binding",
-                "printedName": "SwiftUI.Binding<Navigation_Protocols.ConfirmationPush?>",
+                "printedName": "SwiftUI.Binding<Navigation_Internal._ConfirmationPush?>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Navigation_Protocols.ConfirmationPush?",
+                    "printedName": "Navigation_Internal._ConfirmationPush?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ConfirmationPush",
-                        "printedName": "Navigation_Protocols.ConfirmationPush",
-                        "usr": "s:20Navigation_Protocols16ConfirmationPushV"
+                        "name": "_ConfirmationPush",
+                        "printedName": "Navigation_Internal._ConfirmationPush",
+                        "usr": "s:19Navigation_Internal17_ConfirmationPushV"
                       }
                     ],
                     "usr": "s:Sq"
@@ -732,8 +704,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal22ConfirmationDialogViewV11confirmPush7contentACyxG7SwiftUI7BindingVy0A10_Protocols0cG0VSgG_xtcfc",
-            "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV11confirmPush7contentACyxG7SwiftUI7BindingVy0A10_Protocols0cG0VSgG_xtcfc",
+            "usr": "s:19Navigation_Internal22ConfirmationDialogViewV11confirmPush7contentACyxG7SwiftUI7BindingVyAA01_cG0VSgG_xtcfc",
+            "mangledName": "$s19Navigation_Internal22ConfirmationDialogViewV11confirmPush7contentACyxG7SwiftUI7BindingVyAA01_cG0VSgG_xtcfc",
             "moduleName": "Navigation_Internal",
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
             "sugared_genericSig": "<Content where Content : SwiftUI.View>",
@@ -879,10 +851,360 @@
       },
       {
         "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "Navigation_Internal"
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_AlertPush",
+        "printedName": "_AlertPush",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal10_AlertPushV2id10Foundation4UUIDVvp",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV2id10Foundation4UUIDVvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal10_AlertPushV2id10Foundation4UUIDVvg",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV2id10Foundation4UUIDVvg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal10_AlertPushV5title7SwiftUI18LocalizedStringKeyVvp",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV5title7SwiftUI18LocalizedStringKeyVvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalizedStringKey",
+                    "printedName": "SwiftUI.LocalizedStringKey",
+                    "usr": "s:7SwiftUI18LocalizedStringKeyV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal10_AlertPushV5title7SwiftUI18LocalizedStringKeyVvg",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV5title7SwiftUI18LocalizedStringKeyVvg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal10_AlertPushV7message7SwiftUI18LocalizedStringKeyVvp",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV7message7SwiftUI18LocalizedStringKeyVvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalizedStringKey",
+                    "printedName": "SwiftUI.LocalizedStringKey",
+                    "usr": "s:7SwiftUI18LocalizedStringKeyV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal10_AlertPushV7message7SwiftUI18LocalizedStringKeyVvg",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV7message7SwiftUI18LocalizedStringKeyVvg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buttonContent",
+            "printedName": "buttonContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.AnyView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyView",
+                    "printedName": "SwiftUI.AnyView",
+                    "usr": "s:7SwiftUI7AnyViewV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal10_AlertPushV13buttonContent7SwiftUI7AnyViewVSgvp",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV13buttonContent7SwiftUI7AnyViewVSgvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.AnyView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyView",
+                        "printedName": "SwiftUI.AnyView",
+                        "usr": "s:7SwiftUI7AnyViewV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal10_AlertPushV13buttonContent7SwiftUI7AnyViewVSgvg",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV13buttonContent7SwiftUI7AnyViewVSgvg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:message:buttonContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_AlertPush",
+                "printedName": "Navigation_Internal._AlertPush",
+                "usr": "s:19Navigation_Internal10_AlertPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Navigation_Internal10_AlertPushV5title7message13buttonContentAC7SwiftUI18LocalizedStringKeyV_AIxyXEtcAG4ViewRzlufc",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV5title7message13buttonContentAC7SwiftUI18LocalizedStringKeyV_AIxyXEtcAG4ViewRzlufc",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_AlertPush",
+                "printedName": "Navigation_Internal._AlertPush",
+                "usr": "s:19Navigation_Internal10_AlertPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Navigation_Internal10_AlertPushV5title7messageAC7SwiftUI18LocalizedStringKeyV_AHtcfc",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV5title7messageAC7SwiftUI18LocalizedStringKeyV_AHtcfc",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19Navigation_Internal10_AlertPushV",
+        "mangledName": "$s19Navigation_Internal10_AlertPushV",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -895,11 +1217,1548 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "_ConfirmationPush",
+        "printedName": "_ConfirmationPush",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV2id10Foundation4UUIDVvp",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV2id10Foundation4UUIDVvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV2id10Foundation4UUIDVvg",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV2id10Foundation4UUIDVvg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvp",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalizedStringKey",
+                    "printedName": "SwiftUI.LocalizedStringKey",
+                    "usr": "s:7SwiftUI18LocalizedStringKeyV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvg",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5title7SwiftUI18LocalizedStringKeyVvg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvp",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalizedStringKey",
+                    "printedName": "SwiftUI.LocalizedStringKey",
+                    "usr": "s:7SwiftUI18LocalizedStringKeyV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvg",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV7message7SwiftUI18LocalizedStringKeyVvg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titleVisibility",
+            "printedName": "titleVisibility",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "usr": "s:7SwiftUI10VisibilityO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV15titleVisibility7SwiftUI0F0Ovp",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV15titleVisibility7SwiftUI0F0Ovp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Visibility",
+                    "printedName": "SwiftUI.Visibility",
+                    "usr": "s:7SwiftUI10VisibilityO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV15titleVisibility7SwiftUI0F0Ovg",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV15titleVisibility7SwiftUI0F0Ovg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buttonContent",
+            "printedName": "buttonContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvp",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyView",
+                    "printedName": "SwiftUI.AnyView",
+                    "usr": "s:7SwiftUI7AnyViewV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvg",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV13buttonContent7SwiftUI7AnyViewVvg",
+                "moduleName": "Navigation_Internal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:message:titleVisibility:buttonContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_ConfirmationPush",
+                "printedName": "Navigation_Internal._ConfirmationPush",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5title7message0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AjH0G0OxyctcAH4ViewRzlufc",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:titleVisibility:buttonContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_ConfirmationPush",
+                "printedName": "Navigation_Internal._ConfirmationPush",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LocalizedStringKey",
+                "printedName": "SwiftUI.LocalizedStringKey",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI18LocalizedStringKeyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Visibility",
+                "printedName": "SwiftUI.Visibility",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI10VisibilityO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV5title0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AG0F0OxyctcAG4ViewRzlufc",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5title0E10Visibility13buttonContentAC7SwiftUI18LocalizedStringKeyV_AG0F0OxyctcAG4ViewRzlufc",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19Navigation_Internal17_ConfirmationPushV",
+        "mangledName": "$s19Navigation_Internal17_ConfirmationPushV",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
-        "name": "Navigation_Protocols",
-        "printedName": "Navigation_Protocols",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "Navigation_Internal"
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_NavigationRouter",
+        "printedName": "_NavigationRouter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "navigationPath",
+            "printedName": "navigationPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal01_A6RouterC14navigationPathSayxGvp",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC14navigationPathSayxGvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC14navigationPathSayxGvg",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC14navigationPathSayxGvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC14navigationPathSayxGvs",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC14navigationPathSayxGvs",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC14navigationPathSayxGvM",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC14navigationPathSayxGvM",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "presentedSheet",
+            "printedName": "presentedSheet",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_1?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal01_A6RouterC14presentedSheetq_Sgvp",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC14presentedSheetq_Sgvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_1?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC14presentedSheetq_Sgvg",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC14presentedSheetq_Sgvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_1?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC14presentedSheetq_Sgvs",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC14presentedSheetq_Sgvs",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC14presentedSheetq_SgvM",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC14presentedSheetq_SgvM",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "presentedFullScreen",
+            "printedName": "presentedFullScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_2?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal01_A6RouterC19presentedFullScreenq0_Sgvp",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC19presentedFullScreenq0_Sgvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_2?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC19presentedFullScreenq0_Sgvg",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC19presentedFullScreenq0_Sgvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_2?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC19presentedFullScreenq0_Sgvs",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC19presentedFullScreenq0_Sgvs",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC19presentedFullScreenq0_SgvM",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC19presentedFullScreenq0_SgvM",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_NavigationRouter",
+                "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:19Navigation_Internal01_A6RouterC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Navigation_Internal01_A6RouterCACyxq_q0_Gycfc",
+            "mangledName": "$s19Navigation_Internal01_A6RouterCACyxq_q0_Gycfc",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setActive",
+            "printedName": "setActive()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC9setActiveyyF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC9setActiveyyF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resignActive",
+            "printedName": "resignActive()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC12resignActiveyyF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC12resignActiveyyF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "navigate",
+            "printedName": "navigate(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Destination",
+                "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:19Navigation_Internal12_DestinationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC8navigate2toyAA12_DestinationOyxq_q0_G_tF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC8navigate2toyAA12_DestinationOyxq_q0_G_tF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "push",
+            "printedName": "push(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC4pushyyxF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC4pushyyxF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_1"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC7presentyyq_F",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC7presentyyq_F",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_2"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC7presentyyq0_F",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC7presentyyq0_F",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deepLinkOpen",
+            "printedName": "deepLinkOpen(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Destination",
+                "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:19Navigation_Internal12_DestinationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC12deepLinkOpen2toyAA12_DestinationOyxq_q0_G_tF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC12deepLinkOpen2toyAA12_DestinationOyxq_q0_G_tF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19Navigation_Internal01_A6RouterC",
+        "mangledName": "$s19Navigation_Internal01_A6RouterC",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+        "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Observable",
+            "printedName": "Observable",
+            "usr": "s:11Observation10ObservableP",
+            "mangledName": "$s11Observation10ObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_ViewProvider",
+        "printedName": "_ViewProvider",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "Content",
+            "printedName": "Content",
+            "declKind": "AssociatedType",
+            "usr": "s:19Navigation_Internal13_ViewProviderP7ContentQa",
+            "mangledName": "$s19Navigation_Internal13_ViewProviderP7ContentQa",
+            "moduleName": "Navigation_Internal",
+            "protocolReq": true
+          },
+          {
+            "kind": "Function",
+            "name": "destinationView",
+            "printedName": "destinationView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Content"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal13_ViewProviderP011destinationC07ContentQzyF",
+            "mangledName": "$s19Navigation_Internal13_ViewProviderP011destinationC07ContentQzyF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0 where τ_0_0 : Navigation_Internal._ViewProvider>",
+            "sugared_genericSig": "<Self where Self : Navigation_Internal._ViewProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:19Navigation_Internal13_ViewProviderP",
+        "mangledName": "$s19Navigation_Internal13_ViewProviderP",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0 : Swift.Identifiable, τ_0_0.Content : SwiftUI.View>",
+        "sugared_genericSig": "<Self : Swift.Identifiable, Self.Content : SwiftUI.View>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_PushNavigation",
+        "printedName": "_PushNavigation",
+        "declKind": "Protocol",
+        "usr": "s:19Navigation_Internal05_PushA0P",
+        "mangledName": "$s19Navigation_Internal05_PushA0P",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0 : Navigation_Internal._ViewProvider, τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Self : Navigation_Internal._ViewProvider, Self : Swift.Hashable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ViewProvider",
+            "printedName": "_ViewProvider",
+            "usr": "s:19Navigation_Internal13_ViewProviderP",
+            "mangledName": "$s19Navigation_Internal13_ViewProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_ModalNavigation",
+        "printedName": "_ModalNavigation",
+        "declKind": "Protocol",
+        "usr": "s:19Navigation_Internal06_ModalA0P",
+        "mangledName": "$s19Navigation_Internal06_ModalA0P",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0 : Navigation_Internal._ViewProvider>",
+        "sugared_genericSig": "<Self : Navigation_Internal._ViewProvider>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ViewProvider",
+            "printedName": "_ViewProvider",
+            "usr": "s:19Navigation_Internal13_ViewProviderP",
+            "mangledName": "$s19Navigation_Internal13_ViewProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_Destination",
+        "printedName": "_Destination",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "push",
+            "printedName": "push",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation> (Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_0) -> Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) -> Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Destination",
+                        "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:19Navigation_Internal12_DestinationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Destination",
+                        "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:19Navigation_Internal12_DestinationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19Navigation_Internal12_DestinationO4pushyACyxq_q0_GxcAEmAA05_PushA0RzAA06_ModalA0R_AaGR0_r1_lF",
+            "mangledName": "$s19Navigation_Internal12_DestinationO4pushyACyxq_q0_GxcAEmAA05_PushA0RzAA06_ModalA0R_AaGR0_r1_lF",
+            "moduleName": "Navigation_Internal"
+          },
+          {
+            "kind": "Var",
+            "name": "sheet",
+            "printedName": "sheet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation> (Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_1) -> Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_1) -> Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Destination",
+                        "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:19Navigation_Internal12_DestinationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Destination",
+                        "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:19Navigation_Internal12_DestinationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19Navigation_Internal12_DestinationO5sheetyACyxq_q0_Gq_cAEmAA05_PushA0RzAA06_ModalA0R_AaGR0_r1_lF",
+            "mangledName": "$s19Navigation_Internal12_DestinationO5sheetyACyxq_q0_Gq_cAEmAA05_PushA0RzAA06_ModalA0R_AaGR0_r1_lF",
+            "moduleName": "Navigation_Internal"
+          },
+          {
+            "kind": "Var",
+            "name": "fullScreen",
+            "printedName": "fullScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation> (Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>.Type) -> (τ_0_2) -> Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_2) -> Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Destination",
+                        "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:19Navigation_Internal12_DestinationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_Destination",
+                        "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_2"
+                          }
+                        ],
+                        "usr": "s:19Navigation_Internal12_DestinationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19Navigation_Internal12_DestinationO10fullScreenyACyxq_q0_Gq0_cAEmAA05_PushA0RzAA06_ModalA0R_AaGR0_r1_lF",
+            "mangledName": "$s19Navigation_Internal12_DestinationO10fullScreenyACyxq_q0_Gq0_cAEmAA05_PushA0RzAA06_ModalA0R_AaGR0_r1_lF",
+            "moduleName": "Navigation_Internal"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19Navigation_Internal12_DestinationO",
+        "mangledName": "$s19Navigation_Internal12_DestinationO",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -942,12 +2801,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Bindable",
-                "printedName": "SwiftUI.Bindable<Navigation_Protocols.NavigationRouter<τ_0_0, τ_0_1, τ_0_2>>",
+                "printedName": "SwiftUI.Bindable<Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NavigationRouter",
-                    "printedName": "Navigation_Protocols.NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                    "name": "_NavigationRouter",
+                    "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -965,7 +2824,7 @@
                         "printedName": "τ_0_2"
                       }
                     ],
-                    "usr": "s:20Navigation_Protocols0A6RouterC"
+                    "usr": "s:19Navigation_Internal01_A6RouterC"
                   }
                 ],
                 "usr": "s:7SwiftUI8BindableV"
@@ -989,11 +2848,11 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal01_A9ContainerV6router7contentACyxq_q0_q1_G7SwiftUI8BindableVy0A10_Protocols0A6RouterCyxq_q0_GG_q1_yctcfc",
-            "mangledName": "$s19Navigation_Internal01_A9ContainerV6router7contentACyxq_q0_q1_G7SwiftUI8BindableVy0A10_Protocols0A6RouterCyxq_q0_GG_q1_yctcfc",
+            "usr": "s:19Navigation_Internal01_A9ContainerV6router7contentACyxq_q0_q1_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_GG_q1_yctcfc",
+            "mangledName": "$s19Navigation_Internal01_A9ContainerV6router7contentACyxq_q0_q1_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_GG_q1_yctcfc",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation, τ_0_3 : SwiftUI.View>",
-            "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUI.View>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
+            "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -1053,8 +2912,8 @@
                 "usr": "s:19Navigation_Internal01_A9ContainerV4bodyQrvg",
                 "mangledName": "$s19Navigation_Internal01_A9ContainerV4bodyQrvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation, τ_0_3 : SwiftUI.View>",
-                "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUI.View>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
+                "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
                 "accessorKind": "get"
               }
             ]
@@ -1064,8 +2923,8 @@
         "usr": "s:19Navigation_Internal01_A9ContainerV",
         "mangledName": "$s19Navigation_Internal01_A9ContainerV",
         "moduleName": "Navigation_Internal",
-        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Protocols.PushNavigation, τ_0_1 : Navigation_Protocols.ModalNavigation, τ_0_2 : Navigation_Protocols.ModalNavigation, τ_0_3 : SwiftUI.View>",
-        "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUI.View>",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -1150,8 +3009,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvp",
-            "mangledName": "$s7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvp",
+            "usr": "s:7SwiftUI7BindingV19Navigation_InternalAD10_AlertPushVSgRszlE11isPresentedACySbGvp",
+            "mangledName": "$s7SwiftUI7BindingV19Navigation_InternalAD10_AlertPushVSgRszlE11isPresentedACySbGvp",
             "moduleName": "Navigation_Internal",
             "isFromExtension": true,
             "accessors": [
@@ -1176,11 +3035,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvg",
-                "mangledName": "$s7SwiftUI7BindingV19Navigation_Internal0D10_Protocols9AlertPushVSgRszlE11isPresentedACySbGvg",
+                "usr": "s:7SwiftUI7BindingV19Navigation_InternalAD10_AlertPushVSgRszlE11isPresentedACySbGvg",
+                "mangledName": "$s7SwiftUI7BindingV19Navigation_InternalAD10_AlertPushVSgRszlE11isPresentedACySbGvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0 where τ_0_0 == Navigation_Protocols.AlertPush?>",
-                "sugared_genericSig": "<Value where Value == Navigation_Protocols.AlertPush?>",
+                "genericSig": "<τ_0_0 where τ_0_0 == Navigation_Internal._AlertPush?>",
+                "sugared_genericSig": "<Value where Value == Navigation_Internal._AlertPush?>",
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -1207,8 +3066,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7SwiftUI7BindingV19Navigation_Internal0D10_Protocols16ConfirmationPushVSgRszlE11isPresentedACySbGvp",
-            "mangledName": "$s7SwiftUI7BindingV19Navigation_Internal0D10_Protocols16ConfirmationPushVSgRszlE11isPresentedACySbGvp",
+            "usr": "s:7SwiftUI7BindingV19Navigation_InternalAD17_ConfirmationPushVSgRszlE11isPresentedACySbGvp",
+            "mangledName": "$s7SwiftUI7BindingV19Navigation_InternalAD17_ConfirmationPushVSgRszlE11isPresentedACySbGvp",
             "moduleName": "Navigation_Internal",
             "isFromExtension": true,
             "accessors": [
@@ -1233,11 +3092,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7SwiftUI7BindingV19Navigation_Internal0D10_Protocols16ConfirmationPushVSgRszlE11isPresentedACySbGvg",
-                "mangledName": "$s7SwiftUI7BindingV19Navigation_Internal0D10_Protocols16ConfirmationPushVSgRszlE11isPresentedACySbGvg",
+                "usr": "s:7SwiftUI7BindingV19Navigation_InternalAD17_ConfirmationPushVSgRszlE11isPresentedACySbGvg",
+                "mangledName": "$s7SwiftUI7BindingV19Navigation_InternalAD17_ConfirmationPushVSgRszlE11isPresentedACySbGvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0 where τ_0_0 == Navigation_Protocols.ConfirmationPush?>",
-                "sugared_genericSig": "<Value where Value == Navigation_Protocols.ConfirmationPush?>",
+                "genericSig": "<τ_0_0 where τ_0_0 == Navigation_Internal._ConfirmationPush?>",
+                "sugared_genericSig": "<Value where Value == Navigation_Internal._ConfirmationPush?>",
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -1658,5 +3517,20 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_ConfirmationPush.swift",
+      "kind": "StringLiteral",
+      "offset": 851,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_NavigationRouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "false"
+    }
+  ]
 }

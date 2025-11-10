@@ -1,29 +1,28 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target x86_64-apple-ios18.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Navigation_Internal
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
-import Navigation_Protocols
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import Swift
 import SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension SwiftUICore.Binding where Value == Navigation_Protocols.AlertPush? {
+extension SwiftUICore.Binding where Value == Navigation_Internal._AlertPush? {
   public var isPresented: SwiftUICore.Binding<Swift.Bool> {
     get
   }
 }
 @_Concurrency.MainActor @preconcurrency public struct AlertView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(content: Content, alertPush: SwiftUICore.Binding<Navigation_Protocols.AlertPush?>)
+  @_Concurrency.MainActor @preconcurrency public init(content: Content, alertPush: SwiftUICore.Binding<Navigation_Internal._AlertPush?>)
   #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal9AlertViewV4bodyQrvp", 0) __<Content>
 }
-@_Concurrency.MainActor @preconcurrency public struct _NavigationButtonImpl<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Protocols.NavigationRouter<Push, Sheet, FullScreen>>, destination: Navigation_Protocols.Destination<Push, Sheet, FullScreen>, label: @escaping () -> Content)
+@_Concurrency.MainActor @preconcurrency public struct _NavigationButtonImpl<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen>>, destination: Navigation_Internal._Destination<Push, Sheet, FullScreen>, label: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -38,20 +37,88 @@ extension SwiftUICore.Binding where Value == Navigation_Protocols.AlertPush? {
 }
 @_Concurrency.MainActor @preconcurrency public struct ConfirmationDialogView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(confirmPush: SwiftUICore.Binding<Navigation_Protocols.ConfirmationPush?>, content: Content)
+  @_Concurrency.MainActor @preconcurrency public init(confirmPush: SwiftUICore.Binding<Navigation_Internal._ConfirmationPush?>, content: Content)
   #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal22ConfirmationDialogViewV4bodyQrvp", 0) __<Content>
 }
-extension SwiftUICore.Binding where Value == Navigation_Protocols.ConfirmationPush? {
+extension SwiftUICore.Binding where Value == Navigation_Internal._ConfirmationPush? {
   public var isPresented: SwiftUICore.Binding<Swift.Bool> {
     get
   }
 }
-@_Concurrency.MainActor @preconcurrency public struct _NavigationContainer<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Protocols.PushNavigation, Sheet : Navigation_Protocols.ModalNavigation, FullScreen : Navigation_Protocols.ModalNavigation, Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Protocols.NavigationRouter<Push, Sheet, FullScreen>>, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+public struct _AlertPush : Swift.Identifiable, @unchecked Swift.Sendable {
+  public let id: Foundation.UUID
+  public let title: SwiftUICore.LocalizedStringKey
+  public let message: SwiftUICore.LocalizedStringKey
+  public let buttonContent: SwiftUICore.AnyView?
+  public init<Content>(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey, @SwiftUICore.ViewBuilder buttonContent: () -> Content) where Content : SwiftUICore.View
+  public init(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey)
+  public typealias ID = Foundation.UUID
+}
+public struct _ConfirmationPush : Swift.Identifiable, @unchecked Swift.Sendable {
+  public let id: Foundation.UUID
+  public let title: SwiftUICore.LocalizedStringKey
+  public let message: SwiftUICore.LocalizedStringKey
+  public let titleVisibility: SwiftUICore.Visibility
+  public let buttonContent: SwiftUICore.AnyView
+  public init<Content>(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey, titleVisibility: SwiftUICore.Visibility = .visible, @SwiftUICore.ViewBuilder buttonContent: @escaping () -> Content) where Content : SwiftUICore.View
+  public init<Content>(title: SwiftUICore.LocalizedStringKey = "", titleVisibility: SwiftUICore.Visibility = .hidden, @SwiftUICore.ViewBuilder buttonContent: @escaping () -> Content) where Content : SwiftUICore.View
+  public typealias ID = Foundation.UUID
+}
+final public class _NavigationRouter<PushNav, SheetNav, FullScreenNav> where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation {
+  final public var navigationPath: [PushNav] {
+    get
+    set
+    _modify
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var presentedSheet: SheetNav? {
+    get
+    set
+    _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var presentedFullScreen: FullScreenNav? {
+    get
+    set
+    _modify
+  }
+  #endif
+  public init()
+  @objc deinit
+}
+extension Navigation_Internal._NavigationRouter {
+  final public func setActive()
+  final public func resignActive()
+}
+extension Navigation_Internal._NavigationRouter {
+  final public func navigate(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
+  final public func push(_ destination: PushNav)
+  final public func present(_ destination: SheetNav)
+  final public func present(_ destination: FullScreenNav)
+  final public func deepLinkOpen(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
+}
+extension Navigation_Internal._NavigationRouter : nonisolated Observation.Observable {
+}
+public protocol _ViewProvider : Swift.Identifiable {
+  associatedtype Content : SwiftUICore.View
+  @SwiftUICore.ViewBuilder func destinationView() -> Self.Content
+}
+public protocol _PushNavigation : Navigation_Internal._ViewProvider, Swift.Hashable {
+}
+public protocol _ModalNavigation : Navigation_Internal._ViewProvider {
+}
+public enum _Destination<Push, Sheet, FullScreen> where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation {
+  case push(_: Push)
+  case sheet(_: Sheet)
+  case fullScreen(_: FullScreen)
+}
+@_Concurrency.MainActor @preconcurrency public struct _NavigationContainer<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen>>, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
