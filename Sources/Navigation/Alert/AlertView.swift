@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Navigation_Internal
-@_exported import Navigation_Protocols
+
 
 public extension View {
     
