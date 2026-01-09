@@ -244,7 +244,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "_NavigationButtonImpl",
-                "printedName": "Navigation_Internal._NavigationButtonImpl<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
+                "printedName": "Navigation_Internal._NavigationButtonImpl<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -265,6 +265,11 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_3"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_4"
                   }
                 ],
                 "usr": "s:19Navigation_Internal01_A10ButtonImplV"
@@ -272,12 +277,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Bindable",
-                "printedName": "SwiftUI.Bindable<Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>>",
+                "printedName": "SwiftUI.Bindable<Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2, τ_0_3>>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "_NavigationRouter",
-                    "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                    "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -293,6 +298,11 @@
                         "kind": "TypeNominal",
                         "name": "GenericTypeParam",
                         "printedName": "τ_0_2"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_3"
                       }
                     ],
                     "usr": "s:19Navigation_Internal01_A6RouterC"
@@ -326,12 +336,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() -> τ_0_3",
+                "printedName": "() -> τ_0_4",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
-                    "printedName": "τ_0_3"
+                    "printedName": "τ_0_4"
                   },
                   {
                     "kind": "TypeNominal",
@@ -342,11 +352,11 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal01_A10ButtonImplV6router11destination5labelACyxq_q0_q1_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_GG_AA12_DestinationOyxq_q0_Gq1_yctcfc",
-            "mangledName": "$s19Navigation_Internal01_A10ButtonImplV6router11destination5labelACyxq_q0_q1_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_GG_AA12_DestinationOyxq_q0_Gq1_yctcfc",
+            "usr": "s:19Navigation_Internal01_A10ButtonImplV6router11destination5labelACyxq_q0_q1_q2_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_q1_GG_AA12_DestinationOyxq_q0_Gq2_yctcfc",
+            "mangledName": "$s19Navigation_Internal01_A10ButtonImplV6router11destination5labelACyxq_q0_q1_q2_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_q1_GG_AA12_DestinationOyxq_q0_Gq2_yctcfc",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
-            "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+            "sugared_genericSig": "<Push, Sheet, FullScreen, TabNav, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUI.View>",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -406,8 +416,8 @@
                 "usr": "s:19Navigation_Internal01_A10ButtonImplV4bodyQrvg",
                 "mangledName": "$s19Navigation_Internal01_A10ButtonImplV4bodyQrvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
-                "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+                "sugared_genericSig": "<Push, Sheet, FullScreen, TabNav, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUI.View>",
                 "accessorKind": "get"
               }
             ]
@@ -417,8 +427,8 @@
         "usr": "s:19Navigation_Internal01_A10ButtonImplV",
         "mangledName": "$s19Navigation_Internal01_A10ButtonImplV",
         "moduleName": "Navigation_Internal",
-        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
-        "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen, TabNav, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUI.View>",
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -2753,9 +2763,338 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC2id10Foundation4UUIDVvg",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC2id10Foundation4UUIDVvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedTab",
+            "printedName": "selectedTab",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_3"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal01_A6RouterC11selectedTabq1_vp",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC11selectedTabq1_vp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC11selectedTabq1_vg",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC11selectedTabq1_vg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC11selectedTabq1_vs",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC11selectedTabq1_vs",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC11selectedTabq1_vM",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC11selectedTabq1_vM",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paths",
+            "printedName": "paths",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[τ_0_3 : [τ_0_0]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal01_A6RouterC5pathsSDyq1_SayxGGvp",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC5pathsSDyq1_SayxGGvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[τ_0_3 : [τ_0_0]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_3"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC5pathsSDyq1_SayxGGvg",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC5pathsSDyq1_SayxGGvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sheets",
+            "printedName": "sheets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[τ_0_3 : τ_0_1]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal01_A6RouterC6sheetsSDyq1_q_Gvp",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC6sheetsSDyq1_q_Gvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[τ_0_3 : τ_0_1]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_3"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC6sheetsSDyq1_q_Gvg",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC6sheetsSDyq1_q_Gvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fullScreens",
+            "printedName": "fullScreens",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[τ_0_3 : τ_0_2]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal01_A6RouterC11fullScreensSDyq1_q0_Gvp",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC11fullScreensSDyq1_q0_Gvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[τ_0_3 : τ_0_2]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_3"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_2"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal01_A6RouterC11fullScreensSDyq1_q0_Gvg",
+                "mangledName": "$s19Navigation_Internal01_A6RouterC11fullScreensSDyq1_q0_Gvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -2787,9 +3126,7 @@
             "mangledName": "$s19Navigation_Internal01_A6RouterC4pathSayxGvp",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
-              "HasInitialValue",
               "Final",
-              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -2816,8 +3153,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC4pathSayxGvg",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC4pathSayxGvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -2851,8 +3188,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC4pathSayxGvs",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC4pathSayxGvs",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -2873,8 +3210,9 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC4pathSayxGvM",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC4pathSayxGvM",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
@@ -2907,7 +3245,6 @@
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "Final",
-              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -2934,8 +3271,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC5sheetq_Sgvg",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC5sheetq_Sgvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -2969,8 +3306,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC5sheetq_Sgvs",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC5sheetq_Sgvs",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -2991,8 +3328,9 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC5sheetq_SgvM",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC5sheetq_SgvM",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
@@ -3025,7 +3363,6 @@
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "Final",
-              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -3052,8 +3389,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC10fullScreenq0_Sgvg",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC10fullScreenq0_Sgvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3087,8 +3424,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC10fullScreenq0_Sgvs",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC10fullScreenq0_Sgvs",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3109,8 +3446,9 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC10fullScreenq0_SgvM",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC10fullScreenq0_SgvM",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
@@ -3172,8 +3510,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC9alertPushAA06_AlertE0VSgvg",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC9alertPushAA06_AlertE0VSgvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3208,8 +3546,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC9alertPushAA06_AlertE0VSgvs",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC9alertPushAA06_AlertE0VSgvs",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3230,8 +3568,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC9alertPushAA06_AlertE0VSgvM",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC9alertPushAA06_AlertE0VSgvM",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3293,8 +3631,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC12confirmationAA17_ConfirmationPushVSgvg",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC12confirmationAA17_ConfirmationPushVSgvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3329,8 +3667,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC12confirmationAA17_ConfirmationPushVSgvs",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC12confirmationAA17_ConfirmationPushVSgvs",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3351,8 +3689,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC12confirmationAA17_ConfirmationPushVSgvM",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC12confirmationAA17_ConfirmationPushVSgvM",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3400,8 +3738,8 @@
                 "usr": "s:19Navigation_Internal01_A6RouterC8isActiveSbvg",
                 "mangledName": "$s19Navigation_Internal01_A6RouterC8isActiveSbvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+                "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
                 "declAttributes": [
                   "Final"
                 ],
@@ -3412,12 +3750,12 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init()",
+            "printedName": "init(selectedTab:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "_NavigationRouter",
-                "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3433,17 +3771,27 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_2"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
                   }
                 ],
                 "usr": "s:19Navigation_Internal01_A6RouterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_3"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal01_A6RouterCACyxq_q0_Gycfc",
-            "mangledName": "$s19Navigation_Internal01_A6RouterCACyxq_q0_Gycfc",
+            "usr": "s:19Navigation_Internal01_A6RouterC11selectedTabACyxq_q0_q1_Gq1__tcfc",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC11selectedTabACyxq_q0_q1_Gq1__tcfc",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "AccessControl"
             ],
@@ -3464,8 +3812,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC9setActiveyyF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC9setActiveyyF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3487,8 +3835,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC12resignActiveyyF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC12resignActiveyyF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3533,8 +3881,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC8navigate2toyAA12_DestinationOyxq_q0_G_tF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC8navigate2toyAA12_DestinationOyxq_q0_G_tF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3561,8 +3909,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC4pushyyxF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC4pushyyxF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3589,8 +3937,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC7presentyyq_F",
             "mangledName": "$s19Navigation_Internal01_A6RouterC7presentyyq_F",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3617,8 +3965,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC7presentyyq0_F",
             "mangledName": "$s19Navigation_Internal01_A6RouterC7presentyyq0_F",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3640,8 +3988,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC3popyyF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC3popyyF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3663,8 +4011,82 @@
             "usr": "s:19Navigation_Internal01_A6RouterC9popToRootyyF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC9popToRootyyF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popToRoot",
+            "printedName": "popToRoot(tab:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_3"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC9popToRoot3tabyq1__tF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC9popToRoot3tabyq1__tF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetCurrentTab",
+            "printedName": "resetCurrentTab()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC15resetCurrentTabyyF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC15resetCurrentTabyyF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetAllTabs",
+            "printedName": "resetAllTabs()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC12resetAllTabsyyF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC12resetAllTabsyyF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3686,8 +4108,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC12dismissSheetyyF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC12dismissSheetyyF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3709,8 +4131,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC17dismissFullScreenyyF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC17dismissFullScreenyyF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3732,8 +4154,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC16dismissAllModalsyyF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC16dismissAllModalsyyF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3755,8 +4177,8 @@
             "usr": "s:19Navigation_Internal01_A6RouterC5resetyyF",
             "mangledName": "$s19Navigation_Internal01_A6RouterC5resetyyF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3766,7 +4188,7 @@
           {
             "kind": "Function",
             "name": "deepLinkOpen",
-            "printedName": "deepLinkOpen(to:policy:)",
+            "printedName": "deepLinkOpen(to:tab:policy:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3798,6 +4220,11 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_3"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "_DeepLinkPolicy",
                 "printedName": "Navigation_Internal._DeepLinkPolicy<τ_0_1, τ_0_2>",
                 "children": [
@@ -3817,11 +4244,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19Navigation_Internal01_A6RouterC12deepLinkOpen2to6policyyAA12_DestinationOyxq_q0_G_AA05_DeepE6PolicyOyq_q0_GtF",
-            "mangledName": "$s19Navigation_Internal01_A6RouterC12deepLinkOpen2to6policyyAA12_DestinationOyxq_q0_G_AA05_DeepE6PolicyOyq_q0_GtF",
+            "usr": "s:19Navigation_Internal01_A6RouterC12deepLinkOpen2to3tab6policyyAA12_DestinationOyxq_q0_G_q1_AA05_DeepE6PolicyOyq_q0_GtF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC12deepLinkOpen2to3tab6policyyAA12_DestinationOyxq_q0_G_q1_AA05_DeepE6PolicyOyq_q0_GtF",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
             "declAttributes": [
               "Final",
               "AccessControl"
@@ -3833,8 +4260,8 @@
         "usr": "s:19Navigation_Internal01_A6RouterC",
         "mangledName": "$s19Navigation_Internal01_A6RouterC",
         "moduleName": "Navigation_Internal",
-        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
-        "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation>",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+        "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
         "declAttributes": [
           "Final",
           "AccessControl",
@@ -4032,6 +4459,64 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ViewProvider",
+            "printedName": "_ViewProvider",
+            "usr": "s:19Navigation_Internal13_ViewProviderP",
+            "mangledName": "$s19Navigation_Internal13_ViewProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_TabNavigation",
+        "printedName": "_TabNavigation",
+        "declKind": "Protocol",
+        "usr": "s:19Navigation_Internal04_TabA0P",
+        "mangledName": "$s19Navigation_Internal04_TabA0P",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0 : Navigation_Internal._ViewProvider, τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Self : Navigation_Internal._ViewProvider, Self : Swift.Hashable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -4353,7 +4838,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "_NavigationContainer",
-                "printedName": "Navigation_Internal._NavigationContainer<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
+                "printedName": "Navigation_Internal._NavigationContainer<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4374,6 +4859,11 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_3"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_4"
                   }
                 ],
                 "usr": "s:19Navigation_Internal01_A9ContainerV"
@@ -4381,12 +4871,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Bindable",
-                "printedName": "SwiftUI.Bindable<Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>>",
+                "printedName": "SwiftUI.Bindable<Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2, τ_0_3>>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "_NavigationRouter",
-                    "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                    "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4402,6 +4892,11 @@
                         "kind": "TypeNominal",
                         "name": "GenericTypeParam",
                         "printedName": "τ_0_2"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_3"
                       }
                     ],
                     "usr": "s:19Navigation_Internal01_A6RouterC"
@@ -4412,12 +4907,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() -> τ_0_3",
+                "printedName": "() -> τ_0_4",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
-                    "printedName": "τ_0_3"
+                    "printedName": "τ_0_4"
                   },
                   {
                     "kind": "TypeNominal",
@@ -4428,11 +4923,11 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal01_A9ContainerV6router7contentACyxq_q0_q1_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_GG_q1_yctcfc",
-            "mangledName": "$s19Navigation_Internal01_A9ContainerV6router7contentACyxq_q0_q1_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_GG_q1_yctcfc",
+            "usr": "s:19Navigation_Internal01_A9ContainerV6router7contentACyxq_q0_q1_q2_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_q1_GG_q2_yctcfc",
+            "mangledName": "$s19Navigation_Internal01_A9ContainerV6router7contentACyxq_q0_q1_q2_G7SwiftUI8BindableVyAA01_A6RouterCyxq_q0_q1_GG_q2_yctcfc",
             "moduleName": "Navigation_Internal",
-            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
-            "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+            "sugared_genericSig": "<Push, Sheet, FullScreen, TabNav, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUI.View>",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -4492,8 +4987,8 @@
                 "usr": "s:19Navigation_Internal01_A9ContainerV4bodyQrvg",
                 "mangledName": "$s19Navigation_Internal01_A9ContainerV4bodyQrvg",
                 "moduleName": "Navigation_Internal",
-                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
-                "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+                "sugared_genericSig": "<Push, Sheet, FullScreen, TabNav, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUI.View>",
                 "accessorKind": "get"
               }
             ]
@@ -4503,8 +4998,8 @@
         "usr": "s:19Navigation_Internal01_A9ContainerV",
         "mangledName": "$s19Navigation_Internal01_A9ContainerV",
         "moduleName": "Navigation_Internal",
-        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : SwiftUI.View>",
-        "sugared_genericSig": "<Push, Sheet, FullScreen, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUI.View>",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen, TabNav, Content where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUI.View>",
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -5333,8 +5828,29 @@
     },
     {
       "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_NavigationRouter.swift",
+      "kind": "Dictionary",
+      "offset": 423,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_NavigationRouter.swift",
+      "kind": "Dictionary",
+      "offset": 484,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_NavigationRouter.swift",
+      "kind": "Dictionary",
+      "offset": 555,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_NavigationRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 561,
+      "offset": 1376,
       "length": 5,
       "value": "false"
     }
