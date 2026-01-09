@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-xros2.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Navigation_Internal
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Swift
 import SwiftUI
 import _Concurrency
@@ -21,12 +21,19 @@ extension SwiftUICore.Binding where Value == Navigation_Internal._AlertPush? {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal9AlertViewV4bodyQrvp", 0) __<Content>
 }
-@_Concurrency.MainActor @preconcurrency public struct _NavigationButtonImpl<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen>>, destination: Navigation_Internal._Destination<Push, Sheet, FullScreen>, label: @escaping () -> Content)
+
+extension SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func alert(_ alertPush: SwiftUICore.Binding<Navigation_Internal._AlertPush?>) -> some SwiftUICore.View
+  
+  #endif
+}
+@_Concurrency.MainActor @preconcurrency public struct _NavigationButtonImpl<Push, Sheet, FullScreen, TabNav, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen, TabNav>>, destination: Navigation_Internal._Destination<Push, Sheet, FullScreen>, label: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A10ButtonImplV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Content>
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A10ButtonImplV4bodyQrvp", 0) __<Push, Sheet, FullScreen, TabNav, Content>
 }
 @_Concurrency.MainActor @preconcurrency public struct NavigationButtonListStyle<Content> : SwiftUICore.View where Content : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(content: Content)
@@ -44,63 +51,133 @@ extension SwiftUICore.Binding where Value == Navigation_Internal._AlertPush? {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal22ConfirmationDialogViewV4bodyQrvp", 0) __<Content>
 }
+
 extension SwiftUICore.Binding where Value == Navigation_Internal._ConfirmationPush? {
   public var isPresented: SwiftUICore.Binding<Swift.Bool> {
     get
   }
 }
-public struct _AlertPush : Swift.Identifiable, @unchecked Swift.Sendable {
+extension SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func confirmation(_ confirm: SwiftUICore.Binding<Navigation_Internal._ConfirmationPush?>) -> some SwiftUICore.View
+  
+  #endif
+}
+public struct _AlertPush : Swift.Identifiable {
+  public struct Action : Swift.Identifiable {
+    public let id: Foundation.UUID
+    public let title: Swift.String
+    public let role: SwiftUI.ButtonRole?
+    public let handler: () -> Swift.Void
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(_ title: Swift.String, role: SwiftUI.ButtonRole? = nil, handler: @escaping () -> Swift.Void)
+    #endif
+    public typealias ID = Foundation.UUID
+  }
   public let id: Foundation.UUID
-  public let title: SwiftUICore.LocalizedStringKey
-  public let message: SwiftUICore.LocalizedStringKey
-  public let buttonContent: SwiftUICore.AnyView?
-  public init<Content>(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey, @SwiftUICore.ViewBuilder buttonContent: () -> Content) where Content : SwiftUICore.View
-  public init(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey)
+  public let title: Swift.String
+  public let message: Swift.String
+  public let cancelTitle: Swift.String
+  public let actions: [Navigation_Internal._AlertPush.Action]
+  public init(title: Swift.String, cancelTitle: Swift.String, message: Swift.String, actions: [Navigation_Internal._AlertPush.Action] = [])
   public typealias ID = Foundation.UUID
 }
-public struct _ConfirmationPush : Swift.Identifiable, @unchecked Swift.Sendable {
+public struct _ConfirmationPush : Swift.Identifiable {
+  public struct Action : Swift.Identifiable {
+    public let id: Foundation.UUID
+    public let title: Swift.String
+    public let role: SwiftUI.ButtonRole?
+    public let handler: () -> Swift.Void
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(_ title: Swift.String, role: SwiftUI.ButtonRole? = nil, handler: @escaping () -> Swift.Void)
+    #endif
+    public typealias ID = Foundation.UUID
+  }
   public let id: Foundation.UUID
-  public let title: SwiftUICore.LocalizedStringKey
-  public let message: SwiftUICore.LocalizedStringKey
+  public let title: Swift.String
+  public let message: Swift.String
+  public let cancelTitle: Swift.String
   public let titleVisibility: SwiftUICore.Visibility
-  public let buttonContent: SwiftUICore.AnyView
-  public init<Content>(title: SwiftUICore.LocalizedStringKey, message: SwiftUICore.LocalizedStringKey, titleVisibility: SwiftUICore.Visibility = .visible, @SwiftUICore.ViewBuilder buttonContent: @escaping () -> Content) where Content : SwiftUICore.View
-  public init<Content>(title: SwiftUICore.LocalizedStringKey = "", titleVisibility: SwiftUICore.Visibility = .hidden, @SwiftUICore.ViewBuilder buttonContent: @escaping () -> Content) where Content : SwiftUICore.View
+  public let actions: [Navigation_Internal._ConfirmationPush.Action]
+  public init(title: Swift.String, cancelTitle: Swift.String, message: Swift.String, titleVisibility: SwiftUICore.Visibility = .visible, actions: [Navigation_Internal._ConfirmationPush.Action] = [])
   public typealias ID = Foundation.UUID
 }
-final public class _NavigationRouter<PushNav, SheetNav, FullScreenNav> where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation {
-  final public var navigationPath: [PushNav] {
-    get
-    set
-    _modify
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public var presentedSheet: SheetNav? {
-    get
-    set
-    _modify
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public var presentedFullScreen: FullScreenNav? {
-    get
-    set
-    _modify
-  }
-  #endif
-  public init()
-  @objc deinit
+public enum _Modal<SheetNav, FullScreenNav> where SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation {
+  case sheet(SheetNav)
+  case full(FullScreenNav)
 }
-extension Navigation_Internal._NavigationRouter {
+public enum _DeepLinkPolicy<SheetNav, FullScreenNav> where SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation {
+  case append
+  case resetThenNavigate
+  case resetToRootThenPresentModal(Navigation_Internal._Modal<SheetNav, FullScreenNav>)
+}
+final public class _NavigationRouter<PushNav, SheetNav, FullScreenNav, TabNav> where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation {
+  final public let id: Foundation.UUID
+  final public var selectedTab: TabNav {
+    get
+    set
+    _modify
+  }
+  final public var paths: [TabNav : [PushNav]] {
+    get
+  }
+  final public var sheets: [TabNav : SheetNav] {
+    get
+  }
+  final public var fullScreens: [TabNav : FullScreenNav] {
+    get
+  }
+  final public var path: [PushNav] {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var sheet: SheetNav? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var fullScreen: FullScreenNav? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var alertPush: Navigation_Internal._AlertPush? {
+    get
+    set
+    _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var confirmation: Navigation_Internal._ConfirmationPush? {
+    get
+    set
+    _modify
+  }
+  #endif
+  final public var isActive: Swift.Bool {
+    get
+  }
+  public init(selectedTab: TabNav)
   final public func setActive()
   final public func resignActive()
-}
-extension Navigation_Internal._NavigationRouter {
   final public func navigate(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
   final public func push(_ destination: PushNav)
   final public func present(_ destination: SheetNav)
   final public func present(_ destination: FullScreenNav)
-  final public func deepLinkOpen(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
+  final public func pop()
+  final public func popToRoot()
+  final public func popToRoot(tab: TabNav)
+  final public func resetCurrentTab()
+  final public func resetAllTabs()
+  final public func dismissSheet()
+  final public func dismissFullScreen()
+  final public func dismissAllModals()
+  final public func reset()
+  final public func deepLinkOpen(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>, tab: TabNav, policy: Navigation_Internal._DeepLinkPolicy<SheetNav, FullScreenNav> = .append)
+  @objc deinit
 }
 extension Navigation_Internal._NavigationRouter : nonisolated Observation.Observable {
 }
@@ -112,17 +189,19 @@ public protocol _PushNavigation : Navigation_Internal._ViewProvider, Swift.Hasha
 }
 public protocol _ModalNavigation : Navigation_Internal._ViewProvider {
 }
+public protocol _TabNavigation : Navigation_Internal._ViewProvider, Swift.Hashable {
+}
 public enum _Destination<Push, Sheet, FullScreen> where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation {
   case push(_: Push)
   case sheet(_: Sheet)
   case fullScreen(_: FullScreen)
 }
-@_Concurrency.MainActor @preconcurrency public struct _NavigationContainer<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen>>, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+@_Concurrency.MainActor @preconcurrency public struct _NavigationContainer<Push, Sheet, FullScreen, TabNav, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen, TabNav>>, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A9ContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Content>
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A9ContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, TabNav, Content>
 }
 extension Navigation_Internal.AlertView : Swift.Sendable {}
 extension Navigation_Internal._NavigationButtonImpl : Swift.Sendable {}

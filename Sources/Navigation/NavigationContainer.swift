@@ -8,11 +8,11 @@
 import SwiftUI
 import Navigation_Internal
 
-public struct NavigationContainer<Push: PushNavigation, Sheet: ModalNavigation, FullScreen: ModalNavigation, Content: View>: View {
-    @Bindable var router: NavigationRouter<Push, Sheet, FullScreen>
+public struct NavigationContainer<Push: PushNavigation, Sheet: ModalNavigation, FullScreen: ModalNavigation, TabNav: TabNavigation, Content: View>: View {
+    @Bindable var router: NavigationRouter<Push, Sheet, FullScreen, TabNav>
     @ViewBuilder var content: () -> Content
     
-    public init(router: NavigationRouter<Push, Sheet, FullScreen>,
+    public init(router: NavigationRouter<Push, Sheet, FullScreen, TabNav>,
                 @ViewBuilder content: @escaping () -> Content) {
         self._router = .init(wrappedValue: router)
         self.content = content
