@@ -951,14 +951,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:19Navigation_Internal10_AlertPushV6ActionV5title10Foundation23LocalizedStringResourceVvp",
-                "mangledName": "$s19Navigation_Internal10_AlertPushV6ActionV5title10Foundation23LocalizedStringResourceVvp",
+                "usr": "s:19Navigation_Internal10_AlertPushV6ActionV5titleSSvp",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV6ActionV5titleSSvp",
                 "moduleName": "Navigation_Internal",
                 "declAttributes": [
                   "HasStorage",
@@ -974,14 +974,14 @@
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LocalizedStringResource",
-                        "printedName": "Foundation.LocalizedStringResource",
-                        "usr": "s:10Foundation23LocalizedStringResourceV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:19Navigation_Internal10_AlertPushV6ActionV5title10Foundation23LocalizedStringResourceVvg",
-                    "mangledName": "$s19Navigation_Internal10_AlertPushV6ActionV5title10Foundation23LocalizedStringResourceVvg",
+                    "usr": "s:19Navigation_Internal10_AlertPushV6ActionV5titleSSvg",
+                    "mangledName": "$s19Navigation_Internal10_AlertPushV6ActionV5titleSSvg",
                     "moduleName": "Navigation_Internal",
                     "implicit": true,
                     "accessorKind": "get"
@@ -1127,9 +1127,9 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   },
                   {
                     "kind": "TypeNominal",
@@ -1165,8 +1165,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:19Navigation_Internal10_AlertPushV6ActionV_4role7handlerAE10Foundation23LocalizedStringResourceV_7SwiftUI10ButtonRoleVSgyyctcfc",
-                "mangledName": "$s19Navigation_Internal10_AlertPushV6ActionV_4role7handlerAE10Foundation23LocalizedStringResourceV_7SwiftUI10ButtonRoleVSgyyctcfc",
+                "usr": "s:19Navigation_Internal10_AlertPushV6ActionV_4role7handlerAESS_7SwiftUI10ButtonRoleVSgyyctcfc",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV6ActionV_4role7handlerAESS_7SwiftUI10ButtonRoleVSgyyctcfc",
                 "moduleName": "Navigation_Internal",
                 "declAttributes": [
                   "AccessControl"
@@ -1272,14 +1272,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:19Navigation_Internal10_AlertPushV5title10Foundation23LocalizedStringResourceVvp",
-            "mangledName": "$s19Navigation_Internal10_AlertPushV5title10Foundation23LocalizedStringResourceVvp",
+            "usr": "s:19Navigation_Internal10_AlertPushV5titleSSvp",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV5titleSSvp",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "HasStorage",
@@ -1295,14 +1295,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19Navigation_Internal10_AlertPushV5title10Foundation23LocalizedStringResourceVvg",
-                "mangledName": "$s19Navigation_Internal10_AlertPushV5title10Foundation23LocalizedStringResourceVvg",
+                "usr": "s:19Navigation_Internal10_AlertPushV5titleSSvg",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV5titleSSvg",
                 "moduleName": "Navigation_Internal",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1316,14 +1316,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:19Navigation_Internal10_AlertPushV7message10Foundation23LocalizedStringResourceVvp",
-            "mangledName": "$s19Navigation_Internal10_AlertPushV7message10Foundation23LocalizedStringResourceVvp",
+            "usr": "s:19Navigation_Internal10_AlertPushV7messageSSvp",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV7messageSSvp",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "HasStorage",
@@ -1339,14 +1339,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19Navigation_Internal10_AlertPushV7message10Foundation23LocalizedStringResourceVvg",
-                "mangledName": "$s19Navigation_Internal10_AlertPushV7message10Foundation23LocalizedStringResourceVvg",
+                "usr": "s:19Navigation_Internal10_AlertPushV7messageSSvg",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV7messageSSvg",
                 "moduleName": "Navigation_Internal",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1360,14 +1360,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:19Navigation_Internal10_AlertPushV11cancelTitle10Foundation23LocalizedStringResourceVvp",
-            "mangledName": "$s19Navigation_Internal10_AlertPushV11cancelTitle10Foundation23LocalizedStringResourceVvp",
+            "usr": "s:19Navigation_Internal10_AlertPushV11cancelTitleSSvp",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV11cancelTitleSSvp",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "HasStorage",
@@ -1383,14 +1383,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19Navigation_Internal10_AlertPushV11cancelTitle10Foundation23LocalizedStringResourceVvg",
-                "mangledName": "$s19Navigation_Internal10_AlertPushV11cancelTitle10Foundation23LocalizedStringResourceVvg",
+                "usr": "s:19Navigation_Internal10_AlertPushV11cancelTitleSSvg",
+                "mangledName": "$s19Navigation_Internal10_AlertPushV11cancelTitleSSvg",
                 "moduleName": "Navigation_Internal",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1470,21 +1470,21 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -1503,8 +1503,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal10_AlertPushV5title11cancelTitle7message7actionsAC10Foundation23LocalizedStringResourceV_A2JSayAC6ActionVGtcfc",
-            "mangledName": "$s19Navigation_Internal10_AlertPushV5title11cancelTitle7message7actionsAC10Foundation23LocalizedStringResourceV_A2JSayAC6ActionVGtcfc",
+            "usr": "s:19Navigation_Internal10_AlertPushV5title11cancelTitle7message7actionsACSS_S2SSayAC6ActionVGtcfc",
+            "mangledName": "$s19Navigation_Internal10_AlertPushV5title11cancelTitle7message7actionsACSS_S2SSayAC6ActionVGtcfc",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "AccessControl"
@@ -1630,14 +1630,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:19Navigation_Internal17_ConfirmationPushV6ActionV5title10Foundation23LocalizedStringResourceVvp",
-                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV6ActionV5title10Foundation23LocalizedStringResourceVvp",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV6ActionV5titleSSvp",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV6ActionV5titleSSvp",
                 "moduleName": "Navigation_Internal",
                 "declAttributes": [
                   "HasStorage",
@@ -1653,14 +1653,14 @@
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LocalizedStringResource",
-                        "printedName": "Foundation.LocalizedStringResource",
-                        "usr": "s:10Foundation23LocalizedStringResourceV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:19Navigation_Internal17_ConfirmationPushV6ActionV5title10Foundation23LocalizedStringResourceVvg",
-                    "mangledName": "$s19Navigation_Internal17_ConfirmationPushV6ActionV5title10Foundation23LocalizedStringResourceVvg",
+                    "usr": "s:19Navigation_Internal17_ConfirmationPushV6ActionV5titleSSvg",
+                    "mangledName": "$s19Navigation_Internal17_ConfirmationPushV6ActionV5titleSSvg",
                     "moduleName": "Navigation_Internal",
                     "implicit": true,
                     "accessorKind": "get"
@@ -1806,9 +1806,9 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   },
                   {
                     "kind": "TypeNominal",
@@ -1844,8 +1844,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:19Navigation_Internal17_ConfirmationPushV6ActionV_4role7handlerAE10Foundation23LocalizedStringResourceV_7SwiftUI10ButtonRoleVSgyyctcfc",
-                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV6ActionV_4role7handlerAE10Foundation23LocalizedStringResourceV_7SwiftUI10ButtonRoleVSgyyctcfc",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV6ActionV_4role7handlerAESS_7SwiftUI10ButtonRoleVSgyyctcfc",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV6ActionV_4role7handlerAESS_7SwiftUI10ButtonRoleVSgyyctcfc",
                 "moduleName": "Navigation_Internal",
                 "declAttributes": [
                   "AccessControl"
@@ -1951,14 +1951,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:19Navigation_Internal17_ConfirmationPushV5title10Foundation23LocalizedStringResourceVvp",
-            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5title10Foundation23LocalizedStringResourceVvp",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV5titleSSvp",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5titleSSvp",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "HasStorage",
@@ -1974,14 +1974,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19Navigation_Internal17_ConfirmationPushV5title10Foundation23LocalizedStringResourceVvg",
-                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5title10Foundation23LocalizedStringResourceVvg",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV5titleSSvg",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5titleSSvg",
                 "moduleName": "Navigation_Internal",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1995,14 +1995,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:19Navigation_Internal17_ConfirmationPushV7message10Foundation23LocalizedStringResourceVvp",
-            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV7message10Foundation23LocalizedStringResourceVvp",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV7messageSSvp",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV7messageSSvp",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "HasStorage",
@@ -2018,14 +2018,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19Navigation_Internal17_ConfirmationPushV7message10Foundation23LocalizedStringResourceVvg",
-                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV7message10Foundation23LocalizedStringResourceVvg",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV7messageSSvg",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV7messageSSvg",
                 "moduleName": "Navigation_Internal",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2039,14 +2039,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:19Navigation_Internal17_ConfirmationPushV11cancelTitle10Foundation23LocalizedStringResourceVvp",
-            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV11cancelTitle10Foundation23LocalizedStringResourceVvp",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV11cancelTitleSSvp",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV11cancelTitleSSvp",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "HasStorage",
@@ -2062,14 +2062,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LocalizedStringResource",
-                    "printedName": "Foundation.LocalizedStringResource",
-                    "usr": "s:10Foundation23LocalizedStringResourceV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:19Navigation_Internal17_ConfirmationPushV11cancelTitle10Foundation23LocalizedStringResourceVvg",
-                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV11cancelTitle10Foundation23LocalizedStringResourceVvg",
+                "usr": "s:19Navigation_Internal17_ConfirmationPushV11cancelTitleSSvg",
+                "mangledName": "$s19Navigation_Internal17_ConfirmationPushV11cancelTitleSSvg",
                 "moduleName": "Navigation_Internal",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2193,21 +2193,21 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LocalizedStringResource",
-                "printedName": "Foundation.LocalizedStringResource",
-                "usr": "s:10Foundation23LocalizedStringResourceV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -2233,8 +2233,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19Navigation_Internal17_ConfirmationPushV5title11cancelTitle7message0E10Visibility7actionsAC10Foundation23LocalizedStringResourceV_A2K7SwiftUI0I0OSayAC6ActionVGtcfc",
-            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5title11cancelTitle7message0E10Visibility7actionsAC10Foundation23LocalizedStringResourceV_A2K7SwiftUI0I0OSayAC6ActionVGtcfc",
+            "usr": "s:19Navigation_Internal17_ConfirmationPushV5title11cancelTitle7message0E10Visibility7actionsACSS_S2S7SwiftUI0I0OSayAC6ActionVGtcfc",
+            "mangledName": "$s19Navigation_Internal17_ConfirmationPushV5title11cancelTitle7message0E10Visibility7actionsACSS_S2S7SwiftUI0I0OSayAC6ActionVGtcfc",
             "moduleName": "Navigation_Internal",
             "declAttributes": [
               "AccessControl"
@@ -5815,14 +5815,14 @@
     {
       "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_AlertPush.swift",
       "kind": "Array",
-      "offset": 984,
+      "offset": 848,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_ConfirmationPush.swift",
       "kind": "Array",
-      "offset": 1090,
+      "offset": 954,
       "length": 2,
       "value": "[]"
     },
