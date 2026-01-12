@@ -111,73 +111,69 @@ public enum _DeepLinkPolicy<SheetNav, FullScreenNav> where SheetNav : Navigation
   case resetThenNavigate
   case resetToRootThenPresentModal(Navigation_Internal._Modal<SheetNav, FullScreenNav>)
 }
-final public class _NavigationRouter<PushNav, SheetNav, FullScreenNav, TabNav> where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation {
-  final public let id: Foundation.UUID
-  final public var selectedTab: TabNav {
+@_Concurrency.MainActor final public class _NavigationRouter<PushNav, SheetNav, FullScreenNav, TabNav> where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation {
+  @_Concurrency.MainActor final public let id: Foundation.UUID
+  @_Concurrency.MainActor final public var selectedTab: TabNav {
     get
     set
     _modify
   }
-  final public var paths: [TabNav : [PushNav]] {
+  @_Concurrency.MainActor final public var paths: [TabNav : [PushNav]] {
     get
   }
-  final public var sheets: [TabNav : SheetNav] {
-    get
-  }
-  final public var fullScreens: [TabNav : FullScreenNav] {
-    get
-  }
-  final public var path: [PushNav] {
+  @_Concurrency.MainActor final public var path: [PushNav] {
     get
     set
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  final public var sheet: SheetNav? {
-    get
-    set
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public var fullScreen: FullScreenNav? {
-    get
-    set
-  }
-  #endif
-  final public func pathBinding(for tab: TabNav) -> SwiftUICore.Binding<[PushNav]>
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public var alertPush: Navigation_Internal._AlertPush? {
+  @_Concurrency.MainActor final public var sheet: SheetNav? {
     get
     set
     _modify
   }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public var confirmation: Navigation_Internal._ConfirmationPush? {
+  @_Concurrency.MainActor final public var fullScreen: FullScreenNav? {
     get
     set
     _modify
   }
   #endif
-  final public var isActive: Swift.Bool {
+  @_Concurrency.MainActor final public func pathBinding(for tab: TabNav) -> SwiftUICore.Binding<[PushNav]>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var alertPush: Navigation_Internal._AlertPush? {
+    get
+    set
+    _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var confirmation: Navigation_Internal._ConfirmationPush? {
+    get
+    set
+    _modify
+  }
+  #endif
+  @_Concurrency.MainActor final public var isActive: Swift.Bool {
     get
   }
-  public init(selectedTab: TabNav)
-  final public func setActive()
-  final public func resignActive()
-  final public func navigate(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
-  final public func push(_ destination: PushNav)
-  final public func present(_ destination: SheetNav)
-  final public func present(_ destination: FullScreenNav)
-  final public func pop()
-  final public func popToRoot()
-  final public func popToRoot(tab: TabNav)
-  final public func resetCurrentTab()
-  final public func resetAllTabs()
-  final public func dismissSheet()
-  final public func dismissFullScreen()
-  final public func dismissAllModals()
-  final public func reset()
-  final public func deepLinkOpen(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>, tab: TabNav, policy: Navigation_Internal._DeepLinkPolicy<SheetNav, FullScreenNav> = .append)
+  @_Concurrency.MainActor public init(selectedTab: TabNav)
+  @_Concurrency.MainActor final public func setActive()
+  @_Concurrency.MainActor final public func resignActive()
+  @_Concurrency.MainActor final public func navigate(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
+  @_Concurrency.MainActor final public func push(_ destination: PushNav)
+  @_Concurrency.MainActor final public func present(_ destination: SheetNav)
+  @_Concurrency.MainActor final public func present(_ destination: FullScreenNav)
+  @_Concurrency.MainActor final public func pop()
+  @_Concurrency.MainActor final public func popToRoot()
+  @_Concurrency.MainActor final public func popToRoot(tab: TabNav)
+  @_Concurrency.MainActor final public func resetCurrentTab()
+  @_Concurrency.MainActor final public func resetAllTabs()
+  @_Concurrency.MainActor final public func dismissSheet()
+  @_Concurrency.MainActor final public func dismissFullScreen()
+  @_Concurrency.MainActor final public func dismissAllModals()
+  @_Concurrency.MainActor final public func reset()
+  @_Concurrency.MainActor final public func deepLinkOpen(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>, tab: TabNav, policy: Navigation_Internal._DeepLinkPolicy<SheetNav, FullScreenNav> = .append)
   @objc deinit
 }
 extension Navigation_Internal._NavigationRouter : nonisolated Observation.Observable {
@@ -215,5 +211,6 @@ extension Navigation_Internal.AlertView : Swift.Sendable {}
 extension Navigation_Internal._NavigationButtonImpl : Swift.Sendable {}
 extension Navigation_Internal.NavigationButtonListStyle : Swift.Sendable {}
 extension Navigation_Internal.ConfirmationDialogView : Swift.Sendable {}
+extension Navigation_Internal._NavigationRouter : Swift.Sendable {}
 extension Navigation_Internal._NavigationContainer : Swift.Sendable {}
 extension Navigation_Internal._TabNavigationContainer : Swift.Sendable {}
