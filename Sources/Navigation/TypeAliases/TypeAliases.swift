@@ -14,5 +14,6 @@ public typealias ViewProvider = _ViewProvider
 public typealias PushNavigation = _PushNavigation
 public typealias ModalNavigation = _ModalNavigation
 public typealias TabNavigation = _TabNavigation
+public typealias TabNavigationContainer = _TabNavigationContainer
 public typealias Destination = _Destination
 public typealias NavigationRouter = _NavigationRouter

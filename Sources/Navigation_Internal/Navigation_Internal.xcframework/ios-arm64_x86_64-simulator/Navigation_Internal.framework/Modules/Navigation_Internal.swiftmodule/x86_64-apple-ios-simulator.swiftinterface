@@ -143,6 +143,7 @@ final public class _NavigationRouter<PushNav, SheetNav, FullScreenNav, TabNav> w
     set
   }
   #endif
+  final public func pathBinding(for tab: TabNav) -> SwiftUICore.Binding<[PushNav]>
   #if compiler(>=5.3) && $NonescapableTypes
   final public var alertPush: Navigation_Internal._AlertPush? {
     get
@@ -203,8 +204,16 @@ public enum _Destination<Push, Sheet, FullScreen> where Push : Navigation_Intern
   }
   public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A9ContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, TabNav, Content>
 }
+@_Concurrency.MainActor @preconcurrency public struct _TabNavigationContainer<Push, Sheet, FullScreen, Tab, Root> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Tab : Navigation_Internal._TabNavigation, Root : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen, Tab>, tab: Tab, @SwiftUICore.ViewBuilder root: @escaping () -> Root)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal04_TabA9ContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Tab, Root>
+}
 extension Navigation_Internal.AlertView : Swift.Sendable {}
 extension Navigation_Internal._NavigationButtonImpl : Swift.Sendable {}
 extension Navigation_Internal.NavigationButtonListStyle : Swift.Sendable {}
 extension Navigation_Internal.ConfirmationDialogView : Swift.Sendable {}
 extension Navigation_Internal._NavigationContainer : Swift.Sendable {}
+extension Navigation_Internal._TabNavigationContainer : Swift.Sendable {}

@@ -3457,6 +3457,50 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "pathBinding",
+            "printedName": "pathBinding(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<[τ_0_0]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_3"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal01_A6RouterC11pathBinding3for7SwiftUI0E0VySayxGGq1__tF",
+            "mangledName": "$s19Navigation_Internal01_A6RouterC11pathBinding3for7SwiftUI0E0VySayxGGq1__tF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation>",
+            "sugared_genericSig": "<PushNav, SheetNav, FullScreenNav, TabNav where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "alertPush",
             "printedName": "alertPush",
@@ -5059,6 +5103,246 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_TabNavigationContainer",
+        "printedName": "_TabNavigationContainer",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(router:tab:root:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_TabNavigationContainer",
+                "printedName": "Navigation_Internal._TabNavigationContainer<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_4"
+                  }
+                ],
+                "usr": "s:19Navigation_Internal04_TabA9ContainerV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_NavigationRouter",
+                "printedName": "Navigation_Internal._NavigationRouter<τ_0_0, τ_0_1, τ_0_2, τ_0_3>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_3"
+                  }
+                ],
+                "usr": "s:19Navigation_Internal01_A6RouterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_3"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_4",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_4"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Navigation_Internal04_TabA9ContainerV6router3tab4rootACyxq_q0_q1_q2_GAA01_A6RouterCyxq_q0_q1_G_q1_q2_yctcfc",
+            "mangledName": "$s19Navigation_Internal04_TabA9ContainerV6router3tab4rootACyxq_q0_q1_q2_GAA01_A6RouterCyxq_q0_q1_G_q1_q2_yctcfc",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+            "sugared_genericSig": "<Push, Sheet, FullScreen, Tab, Root where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Tab : Navigation_Internal._TabNavigation, Root : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19Navigation_Internal04_TabA9ContainerV4bodyQrvp",
+            "mangledName": "$s19Navigation_Internal04_TabA9ContainerV4bodyQrvp",
+            "moduleName": "Navigation_Internal",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19Navigation_Internal04_TabA9ContainerV4bodyQrvg",
+                "mangledName": "$s19Navigation_Internal04_TabA9ContainerV4bodyQrvg",
+                "moduleName": "Navigation_Internal",
+                "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+                "sugared_genericSig": "<Push, Sheet, FullScreen, Tab, Root where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Tab : Navigation_Internal._TabNavigation, Root : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19Navigation_Internal04_TabA9ContainerV",
+        "mangledName": "$s19Navigation_Internal04_TabA9ContainerV",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_0_3, τ_0_4 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation, τ_0_3 : Navigation_Internal._TabNavigation, τ_0_4 : SwiftUI.View>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen, Tab, Root where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Tab : Navigation_Internal._TabNavigation, Root : SwiftUI.View>",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Binding",
         "printedName": "Binding",
@@ -5850,7 +6134,7 @@
     {
       "filePath": "\/Users\/alexanderlowe\/SwiftApps\/Frameworks\/Navigation_Internal\/Navigation_Internal\/Protocols\/_NavigationRouter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1376,
+      "offset": 1569,
       "length": 5,
       "value": "false"
     }
