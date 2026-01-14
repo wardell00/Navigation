@@ -11,8 +11,9 @@ import Navigation_Internal
 
 public extension View {
     
-    func navigationButtonListStyle() -> some View {
-        NavigationButtonListStyle(content: self)
+    @ViewBuilder
+    func navigationButtonListStyle(isShowing: Bool = true) -> some View {
+        if isShowing { NavigationButtonListStyle(content: self) }
     }
 }
 
