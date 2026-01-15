@@ -24,6 +24,7 @@ public typealias TabNavigationRouter = _TabNavigationRouter
 public typealias Split2Router = _Split2NavigationRouter
 public typealias Split3Router = _Split3NavigationRouter
 
+public typealias BaseNavigationContainer = _NavigationContainerBase
 public typealias TabNavigationContainer = _TabNavigationContainer
 public typealias Split2NavigationContainer = _Split2ColumnContainer
 public typealias Split3NavigationContainer = _Split3ColumnContainer
