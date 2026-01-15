@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-xros2.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Navigation_Internal
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Foundation
 import Swift
 import SwiftUI
 import _Concurrency
@@ -28,12 +29,12 @@ extension SwiftUICore.View {
   
   #endif
 }
-@_Concurrency.MainActor @preconcurrency public struct _NavigationButtonImpl<Push, Sheet, FullScreen, TabNav, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen, TabNav>>, destination: Navigation_Internal._Destination<Push, Sheet, FullScreen>, label: @escaping () -> Content)
+@_Concurrency.MainActor @preconcurrency public struct _NavigationButtonImpl<Router, Content> : SwiftUICore.View where Router : Navigation_Internal._Navigating, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: Router, destination: Navigation_Internal._Destination<Router.Push, Router.Sheet, Router.FullScreen>, label: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A10ButtonImplV4bodyQrvp", 0) __<Push, Sheet, FullScreen, TabNav, Content>
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A10ButtonImplV4bodyQrvp", 0) __<Router, Content>
 }
 @_Concurrency.MainActor @preconcurrency public struct NavigationButtonListStyle<Content> : SwiftUICore.View where Content : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(content: Content)
@@ -102,17 +103,8 @@ public struct _ConfirmationPush : Swift.Identifiable {
   public init(title: Swift.String, cancelTitle: Swift.String, message: Swift.String, titleVisibility: SwiftUICore.Visibility = .visible, actions: [Navigation_Internal._ConfirmationPush.Action] = [])
   public typealias ID = Foundation.UUID
 }
-public enum _Modal<SheetNav, FullScreenNav> where SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation {
-  case sheet(SheetNav)
-  case full(FullScreenNav)
-}
-public enum _DeepLinkPolicy<SheetNav, FullScreenNav> where SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation {
-  case append
-  case resetThenNavigate
-  case resetToRootThenPresentModal(Navigation_Internal._Modal<SheetNav, FullScreenNav>)
-}
-@_Concurrency.MainActor final public class _NavigationRouter<PushNav, SheetNav, FullScreenNav, TabNav> where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation {
-  @_Concurrency.MainActor final public let id: Foundation.UUID
+@_Concurrency.MainActor final public class _TabNavigationRouter<PushNav, SheetNav, FullScreenNav, TabNav> : Navigation_Internal._Navigating where PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation {
+  @_Concurrency.MainActor final public let base: Navigation_Internal._BaseNavigationRouter<PushNav, SheetNav, FullScreenNav>
   @_Concurrency.MainActor final public var selectedTab: TabNav {
     get
     set
@@ -129,17 +121,68 @@ public enum _DeepLinkPolicy<SheetNav, FullScreenNav> where SheetNav : Navigation
   @_Concurrency.MainActor final public var sheet: SheetNav? {
     get
     set
-    _modify
   }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public var fullScreen: FullScreenNav? {
     get
     set
-    _modify
   }
   #endif
   @_Concurrency.MainActor final public func pathBinding(for tab: TabNav) -> SwiftUICore.Binding<[PushNav]>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var alertPush: Navigation_Internal._AlertPush? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var confirmation: Navigation_Internal._ConfirmationPush? {
+    get
+    set
+  }
+  #endif
+  @_Concurrency.MainActor final public var isActive: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor public init(selectedTab: TabNav, base: Navigation_Internal._BaseNavigationRouter<PushNav, SheetNav, FullScreenNav>)
+  @_Concurrency.MainActor final public func setActive()
+  @_Concurrency.MainActor final public func resignActive()
+  @_Concurrency.MainActor final public func navigate(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
+  @_Concurrency.MainActor final public func push(_ destination: PushNav)
+  @_Concurrency.MainActor final public func pop()
+  @_Concurrency.MainActor final public func popToRoot()
+  @_Concurrency.MainActor final public func popToRoot(tab: TabNav)
+  @_Concurrency.MainActor final public func resetCurrentTab()
+  @_Concurrency.MainActor final public func resetAllTabs()
+  public typealias FullScreen = FullScreenNav
+  public typealias Push = PushNav
+  public typealias Sheet = SheetNav
+  @objc deinit
+}
+extension Navigation_Internal._TabNavigationRouter : nonisolated Observation.Observable {
+}
+@_Concurrency.MainActor final public class _BaseNavigationRouter<Push, Sheet, FullScreen> : Navigation_Internal._Navigating where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation {
+  @_Concurrency.MainActor final public let id: Foundation.UUID
+  @_Concurrency.MainActor final public var path: [Push] {
+    get
+    set
+    _modify
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var sheet: Sheet? {
+    get
+    set
+    _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var fullScreen: FullScreen? {
+    get
+    set
+    _modify
+  }
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public var alertPush: Navigation_Internal._AlertPush? {
     get
@@ -157,26 +200,22 @@ public enum _DeepLinkPolicy<SheetNav, FullScreenNav> where SheetNav : Navigation
   @_Concurrency.MainActor final public var isActive: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor public init(selectedTab: TabNav)
+  @_Concurrency.MainActor public init()
   @_Concurrency.MainActor final public func setActive()
   @_Concurrency.MainActor final public func resignActive()
-  @_Concurrency.MainActor final public func navigate(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
-  @_Concurrency.MainActor final public func push(_ destination: PushNav)
-  @_Concurrency.MainActor final public func present(_ destination: SheetNav)
-  @_Concurrency.MainActor final public func present(_ destination: FullScreenNav)
+  @_Concurrency.MainActor final public func navigate(to destination: Navigation_Internal._Destination<Push, Sheet, FullScreen>)
+  @_Concurrency.MainActor final public func push(_ destination: Push)
+  @_Concurrency.MainActor final public func present(_ destination: Sheet)
+  @_Concurrency.MainActor final public func present(_ destination: FullScreen)
   @_Concurrency.MainActor final public func pop()
   @_Concurrency.MainActor final public func popToRoot()
-  @_Concurrency.MainActor final public func popToRoot(tab: TabNav)
-  @_Concurrency.MainActor final public func resetCurrentTab()
-  @_Concurrency.MainActor final public func resetAllTabs()
   @_Concurrency.MainActor final public func dismissSheet()
   @_Concurrency.MainActor final public func dismissFullScreen()
   @_Concurrency.MainActor final public func dismissAllModals()
   @_Concurrency.MainActor final public func reset()
-  @_Concurrency.MainActor final public func deepLinkOpen(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>, tab: TabNav, policy: Navigation_Internal._DeepLinkPolicy<SheetNav, FullScreenNav> = .append)
   @objc deinit
 }
-extension Navigation_Internal._NavigationRouter : nonisolated Observation.Observable {
+extension Navigation_Internal._BaseNavigationRouter : nonisolated Observation.Observable {
 }
 public protocol _ViewProvider : Swift.Identifiable {
   associatedtype Content : SwiftUICore.View
@@ -186,31 +225,256 @@ public protocol _PushNavigation : Navigation_Internal._ViewProvider, Swift.Hasha
 }
 public protocol _ModalNavigation : Navigation_Internal._ViewProvider {
 }
-public protocol _TabNavigation : Navigation_Internal._ViewProvider, Swift.Hashable {
+public protocol _TabNavigation : Navigation_Internal._ViewProvider, Swift.CaseIterable, Swift.Hashable {
+}
+public protocol _SideBarNavigation : Navigation_Internal._ViewProvider, Swift.CaseIterable, Swift.Hashable {
+}
+public protocol _ContentNavigation : Navigation_Internal._ViewProvider, Swift.CaseIterable, Swift.Hashable {
+}
+public protocol _Navigating : AnyObject {
+  associatedtype Push : Navigation_Internal._PushNavigation
+  associatedtype Sheet : Navigation_Internal._ModalNavigation
+  associatedtype FullScreen : Navigation_Internal._ModalNavigation
+  @_Concurrency.MainActor func navigate(to destination: Navigation_Internal._Destination<Self.Push, Self.Sheet, Self.FullScreen>)
 }
 public enum _Destination<Push, Sheet, FullScreen> where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation {
   case push(_: Push)
   case sheet(_: Sheet)
   case fullScreen(_: FullScreen)
 }
-@_Concurrency.MainActor @preconcurrency public struct _NavigationContainer<Push, Sheet, FullScreen, TabNav, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, TabNav : Navigation_Internal._TabNavigation, Content : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen, TabNav>>, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+public enum _Split2PathPolicy {
+  case resetOnSelection
+  case perSelection
+  public static func == (a: Navigation_Internal._Split2PathPolicy, b: Navigation_Internal._Split2PathPolicy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum _Split3PathPolicy {
+  case resetOnSelection
+  case perSidebar
+  case perContent
+  case perSidebarAndContent
+  public static func == (a: Navigation_Internal._Split3PathPolicy, b: Navigation_Internal._Split3PathPolicy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_Concurrency.MainActor final public class _Split2NavigationRouter<SidebarNav, PushNav, SheetNav, FullScreenNav> : Navigation_Internal._Navigating where SidebarNav : Navigation_Internal._SideBarNavigation, PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation {
+  @_Concurrency.MainActor final public let base: Navigation_Internal._BaseNavigationRouter<PushNav, SheetNav, FullScreenNav>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var selection: SidebarNav? {
+    get
+    set
+    _modify
+  }
+  #endif
+  @_Concurrency.MainActor final public var policy: Navigation_Internal._Split2PathPolicy {
+    get
+    set
+    _modify
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public init(base: Navigation_Internal._BaseNavigationRouter<PushNav, SheetNav, FullScreenNav>, selection: SidebarNav? = nil, policy: Navigation_Internal._Split2PathPolicy)
+  #endif
+  @_Concurrency.MainActor final public var pathsBySelection: [SidebarNav : [PushNav]] {
+    get
+  }
+  @_Concurrency.MainActor final public var path: [PushNav] {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var sheet: SheetNav? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var fullScreen: FullScreenNav? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var alertPush: Navigation_Internal._AlertPush? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var confirmation: Navigation_Internal._ConfirmationPush? {
+    get
+    set
+  }
+  #endif
+  @_Concurrency.MainActor final public var isActive: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public func setActive()
+  @_Concurrency.MainActor final public func resignActive()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public func select(_ newSelection: SidebarNav?)
+  #endif
+  @_Concurrency.MainActor final public func push(_ destination: PushNav)
+  @_Concurrency.MainActor final public func pop()
+  @_Concurrency.MainActor final public func popToRoot()
+  @_Concurrency.MainActor final public func navigate(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
+  public typealias FullScreen = FullScreenNav
+  public typealias Push = PushNav
+  public typealias Sheet = SheetNav
+  @objc deinit
+}
+@_Concurrency.MainActor final public class _Split3NavigationRouter<SidebarNav, ContentNav, PushNav, SheetNav, FullScreenNav> : Navigation_Internal._Navigating where SidebarNav : Navigation_Internal._SideBarNavigation, ContentNav : Navigation_Internal._ContentNavigation, PushNav : Navigation_Internal._PushNavigation, SheetNav : Navigation_Internal._ModalNavigation, FullScreenNav : Navigation_Internal._ModalNavigation {
+  @_Concurrency.MainActor final public let base: Navigation_Internal._BaseNavigationRouter<PushNav, SheetNav, FullScreenNav>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var sidebarSelection: SidebarNav? {
+    get
+    set
+    _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var contentSelection: ContentNav? {
+    get
+    set
+    _modify
+  }
+  #endif
+  @_Concurrency.MainActor final public var policy: Navigation_Internal._Split3PathPolicy {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor final public var pathsBySidebar: [SidebarNav : [PushNav]] {
+    get
+  }
+  @_Concurrency.MainActor final public var pathsByContent: [ContentNav : [PushNav]] {
+    get
+  }
+  @_Concurrency.MainActor final public var pathsBySidebarAndContent: [Navigation_Internal._Split3NavigationRouter<SidebarNav, ContentNav, PushNav, SheetNav, FullScreenNav>.SelectionKey : [PushNav]] {
+    get
+  }
+  public struct SelectionKey : Swift.Hashable {
+    public let sidebar: SidebarNav
+    public let content: ContentNav
+    public init(sidebar: SidebarNav, content: ContentNav)
+    public static func == (a: Navigation_Internal._Split3NavigationRouter<SidebarNav, ContentNav, PushNav, SheetNav, FullScreenNav>.SelectionKey, b: Navigation_Internal._Split3NavigationRouter<SidebarNav, ContentNav, PushNav, SheetNav, FullScreenNav>.SelectionKey) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public init(sidebarSelection: SidebarNav? = nil, contentSelection: ContentNav? = nil, policy: Navigation_Internal._Split3PathPolicy = .resetOnSelection, base: Navigation_Internal._BaseNavigationRouter<PushNav, SheetNav, FullScreenNav>)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var sheet: SheetNav? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var fullScreen: FullScreenNav? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var alertPush: Navigation_Internal._AlertPush? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var confirmation: Navigation_Internal._ConfirmationPush? {
+    get
+    set
+  }
+  #endif
+  @_Concurrency.MainActor final public var isActive: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public func setActive()
+  @_Concurrency.MainActor final public func resignActive()
+  @_Concurrency.MainActor final public var path: [PushNav] {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public func selectSidebar(_ selection: SidebarNav?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public func selectContent(_ selection: ContentNav?)
+  #endif
+  @_Concurrency.MainActor final public func navigate(to destination: Navigation_Internal._Destination<PushNav, SheetNav, FullScreenNav>)
+  @_Concurrency.MainActor final public func push(_ destination: PushNav)
+  @_Concurrency.MainActor final public func pop()
+  @_Concurrency.MainActor final public func popToRoot()
+  public typealias FullScreen = FullScreenNav
+  public typealias Push = PushNav
+  public typealias Sheet = SheetNav
+  @objc deinit
+}
+extension Navigation_Internal._Split2NavigationRouter : nonisolated Observation.Observable {
+}
+extension Navigation_Internal._Split3NavigationRouter : nonisolated Observation.Observable {
+}
+@_Concurrency.MainActor @preconcurrency public struct _NavigationContainerBase<Push, Sheet, FullScreen, Content> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Content : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: SwiftUICore.Bindable<Navigation_Internal._BaseNavigationRouter<Push, Sheet, FullScreen>>, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A9ContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, TabNav, Content>
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal01_A13ContainerBaseV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Content>
+}
+@_Concurrency.MainActor @preconcurrency public struct _Split2ColumnContainer<Push, Sheet, FullScreen, Sidebar, SidebarView, DetailView> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Sidebar : Navigation_Internal._SideBarNavigation, SidebarView : SwiftUICore.View, DetailView : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(router: Navigation_Internal._Split2NavigationRouter<Sidebar, Push, Sheet, FullScreen>, @SwiftUICore.ViewBuilder sidebar: @escaping () -> SidebarView, @SwiftUICore.ViewBuilder detailRoot: @escaping (Sidebar?) -> DetailView)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal22_Split2ColumnContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Sidebar, SidebarView, DetailView>
+}
+@_Concurrency.MainActor @preconcurrency public struct _Split3ColumnContainer<Push, Sheet, FullScreen, Sidebar, Content, SidebarView, ContentView, DetailView> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Sidebar : Navigation_Internal._SideBarNavigation, Content : Navigation_Internal._ContentNavigation, SidebarView : SwiftUICore.View, ContentView : SwiftUICore.View, DetailView : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(router: Navigation_Internal._Split3NavigationRouter<Sidebar, Content, Push, Sheet, FullScreen>, sidebar: @escaping () -> SidebarView, content: @escaping (Sidebar?) -> ContentView, detailRoot: @escaping (Sidebar?, Content?) -> DetailView)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal22_Split3ColumnContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Sidebar, Content, SidebarView, ContentView, DetailView>
 }
 @_Concurrency.MainActor @preconcurrency public struct _TabNavigationContainer<Push, Sheet, FullScreen, Tab, Root> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Tab : Navigation_Internal._TabNavigation, Root : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(router: Navigation_Internal._NavigationRouter<Push, Sheet, FullScreen, Tab>, tab: Tab, @SwiftUICore.ViewBuilder root: @escaping () -> Root)
+  @_Concurrency.MainActor @preconcurrency public init(router: Navigation_Internal._TabNavigationRouter<Push, Sheet, FullScreen, Tab>, tab: Tab, @SwiftUICore.ViewBuilder root: @escaping () -> Root)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal04_TabA9ContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Tab, Root>
 }
+@_Concurrency.MainActor @preconcurrency public struct _StackContainer<Push, Sheet, FullScreen, Root> : SwiftUICore.View where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation, Root : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(router: Navigation_Internal._BaseNavigationRouter<Push, Sheet, FullScreen>, @SwiftUICore.ViewBuilder root: @escaping () -> Root)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s19Navigation_Internal15_StackContainerV4bodyQrvp", 0) __<Push, Sheet, FullScreen, Root>
+}
 extension Navigation_Internal.AlertView : Swift.Sendable {}
 extension Navigation_Internal._NavigationButtonImpl : Swift.Sendable {}
 extension Navigation_Internal.NavigationButtonListStyle : Swift.Sendable {}
 extension Navigation_Internal.ConfirmationDialogView : Swift.Sendable {}
-extension Navigation_Internal._NavigationRouter : Swift.Sendable {}
-extension Navigation_Internal._NavigationContainer : Swift.Sendable {}
+extension Navigation_Internal._TabNavigationRouter : Swift.Sendable {}
+extension Navigation_Internal._BaseNavigationRouter : Swift.Sendable {}
+extension Navigation_Internal._Split2PathPolicy : Swift.Equatable {}
+extension Navigation_Internal._Split2PathPolicy : Swift.Hashable {}
+extension Navigation_Internal._Split3PathPolicy : Swift.Equatable {}
+extension Navigation_Internal._Split3PathPolicy : Swift.Hashable {}
+extension Navigation_Internal._Split2NavigationRouter : Swift.Sendable {}
+extension Navigation_Internal._Split3NavigationRouter : Swift.Sendable {}
+extension Navigation_Internal._NavigationContainerBase : Swift.Sendable {}
+extension Navigation_Internal._Split2ColumnContainer : Swift.Sendable {}
+extension Navigation_Internal._Split3ColumnContainer : Swift.Sendable {}
 extension Navigation_Internal._TabNavigationContainer : Swift.Sendable {}
+extension Navigation_Internal._StackContainer : Swift.Sendable {}

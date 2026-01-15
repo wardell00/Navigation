@@ -8,14 +8,14 @@
 import SwiftUI
 import Navigation_Internal
 
-public struct _NavigationButton<Push: PushNavigation, Sheet: ModalNavigation, FullScreen: ModalNavigation, TabNav: TabNavigation, Content: View>: View {
-    @Bindable var router: NavigationRouter<Push, Sheet, FullScreen, TabNav>
-    let destination: Destination<Push, Sheet, FullScreen>
+public struct _NavigationButton<Router: Navigating, Content: View>: View {
+    let  router: Router
+    let destination: Destination<Router.Push, Router.Sheet, Router.FullScreen>
     @ViewBuilder let label: () -> Content
     
     public init(
-        router: NavigationRouter<Push, Sheet, FullScreen, TabNav>,
-        destination: Destination<Push, Sheet, FullScreen>,
+        router: Router,
+        destination: Destination<Router.Push, Router.Sheet, Router.FullScreen>,
         label: @escaping () -> Content) {
             self.router = router
             self.destination = destination
@@ -23,7 +23,7 @@ public struct _NavigationButton<Push: PushNavigation, Sheet: ModalNavigation, Fu
         }
     
     public var body: some View {
-        _NavigationButtonImpl(router: $router, destination: destination, label: label)
+        _NavigationButtonImpl(router: router, destination: destination, label: label)
     }
 }
 
