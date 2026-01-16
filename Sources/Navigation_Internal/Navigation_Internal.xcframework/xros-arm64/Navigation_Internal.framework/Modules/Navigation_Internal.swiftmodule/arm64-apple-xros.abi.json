@@ -3644,6 +3644,203 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "_AnyNavigationRouter",
+        "printedName": "_AnyNavigationRouter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_AnyNavigationRouter",
+                "printedName": "Navigation_Internal._AnyNavigationRouter<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:19Navigation_Internal04_AnyA6RouterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19Navigation_Internal04_AnyA6RouterCyACyxq_q0_Gqd__c4PushQyd__Rsz5SheetQyd__Rs_10FullScreenQyd__Rs0_AA11_NavigatingRd__lufc",
+            "mangledName": "$s19Navigation_Internal04_AnyA6RouterCyACyxq_q0_Gqd__c4PushQyd__Rsz5SheetQyd__Rs_10FullScreenQyd__Rs0_AA11_NavigatingRd__lufc",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2, τ_1_0 where τ_0_0 == τ_1_0.Push, τ_0_1 == τ_1_0.Sheet, τ_0_2 == τ_1_0.FullScreen, τ_1_0 : Navigation_Internal._Navigating>",
+            "sugared_genericSig": "<Push, Sheet, FullScreen, R where Push == R.Push, Sheet == R.Sheet, FullScreen == R.FullScreen, R : Navigation_Internal._Navigating>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "navigate",
+            "printedName": "navigate(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_Destination",
+                "printedName": "Navigation_Internal._Destination<τ_0_0, τ_0_1, τ_0_2>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ],
+                "usr": "s:19Navigation_Internal12_DestinationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19Navigation_Internal04_AnyA6RouterC8navigate2toyAA12_DestinationOyxq_q0_G_tF",
+            "mangledName": "$s19Navigation_Internal04_AnyA6RouterC8navigate2toyAA12_DestinationOyxq_q0_G_tF",
+            "moduleName": "Navigation_Internal",
+            "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+            "sugared_genericSig": "<Push, Sheet, FullScreen where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19Navigation_Internal04_AnyA6RouterC",
+        "mangledName": "$s19Navigation_Internal04_AnyA6RouterC",
+        "moduleName": "Navigation_Internal",
+        "genericSig": "<τ_0_0, τ_0_1, τ_0_2 where τ_0_0 : Navigation_Internal._PushNavigation, τ_0_1 : Navigation_Internal._ModalNavigation, τ_0_2 : Navigation_Internal._ModalNavigation>",
+        "sugared_genericSig": "<Push, Sheet, FullScreen where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_Navigating",
+            "printedName": "_Navigating",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Push",
+                "printedName": "Push",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Sheet",
+                "printedName": "Sheet",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "FullScreen",
+                "printedName": "FullScreen",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_2"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:19Navigation_Internal11_NavigatingP",
+            "mangledName": "$s19Navigation_Internal11_NavigatingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Observable",
+            "printedName": "Observable",
+            "usr": "s:11Observation10ObservableP",
+            "mangledName": "$s11Observation10ObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Navigation_Internal",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "_BaseNavigationRouter",
         "printedName": "_BaseNavigationRouter",
         "children": [

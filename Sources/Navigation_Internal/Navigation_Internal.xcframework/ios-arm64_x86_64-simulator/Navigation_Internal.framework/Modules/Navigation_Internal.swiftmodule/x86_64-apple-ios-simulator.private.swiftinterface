@@ -162,6 +162,13 @@ public struct _ConfirmationPush : Swift.Identifiable {
 }
 extension Navigation_Internal._TabNavigationRouter : nonisolated Observation.Observable {
 }
+@_Concurrency.MainActor final public class _AnyNavigationRouter<Push, Sheet, FullScreen> : Navigation_Internal._Navigating where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation {
+  @_Concurrency.MainActor public init<R>(_ router: R) where Push == R.Push, Sheet == R.Sheet, FullScreen == R.FullScreen, R : Navigation_Internal._Navigating
+  @_Concurrency.MainActor final public func navigate(to destination: Navigation_Internal._Destination<Push, Sheet, FullScreen>)
+  @objc deinit
+}
+extension Navigation_Internal._AnyNavigationRouter : nonisolated Observation.Observable {
+}
 @_Concurrency.MainActor final public class _BaseNavigationRouter<Push, Sheet, FullScreen> : Navigation_Internal._Navigating where Push : Navigation_Internal._PushNavigation, Sheet : Navigation_Internal._ModalNavigation, FullScreen : Navigation_Internal._ModalNavigation {
   @_Concurrency.MainActor final public let id: Foundation.UUID
   @_Concurrency.MainActor final public var path: [Push] {
@@ -466,6 +473,7 @@ extension Navigation_Internal._NavigationButtonImpl : Swift.Sendable {}
 extension Navigation_Internal.NavigationButtonListStyle : Swift.Sendable {}
 extension Navigation_Internal.ConfirmationDialogView : Swift.Sendable {}
 extension Navigation_Internal._TabNavigationRouter : Swift.Sendable {}
+extension Navigation_Internal._AnyNavigationRouter : Swift.Sendable {}
 extension Navigation_Internal._BaseNavigationRouter : Swift.Sendable {}
 extension Navigation_Internal._Split2PathPolicy : Swift.Equatable {}
 extension Navigation_Internal._Split2PathPolicy : Swift.Hashable {}
